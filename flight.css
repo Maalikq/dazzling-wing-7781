@@ -1,0 +1,6 @@
+.flight_details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  border: 2px solid ;
+}
