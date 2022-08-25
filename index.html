@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stays</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        h1 {
+            margin-left: 70px;
+        }
+
+        #search_box_second {
+            width: 90%;
+            margin: auto;
+            margin-top: 1rem;
+            gap: 1.25rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            margin-bottom: 1.25rem;
+        }
+
+        #main-search {
+            position: relative;
+        }
+
+        .material-symbols-outlined {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            padding: 4px;
+            height: 0;
+        }
+
+        .material-symbols-outlined {
+            height: 100px;
+            width: 100px;
+        }
+
+        #main-search input {
+            /* width: 200px; */
+            width: 93%;
+            height: 40px;
+            position: relative;
+            font-size: 1rem;
+            padding-left: 30px;
+        }
+
+        #checkbox1 {
+            margin-left: 80px;
+            width: 17px;
+            height: 15px;
+        }
+
+        #checkbox2 {
+            margin-left: 100px;
+            width: 17px;
+            height: 15px;
+        }
+
+        #search-main-btn {
+            display: flex;
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-top: 10px;
+            padding: 15px 66px;
+            color: white;
+            background-color: #c83259;
+            border: 0px;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "apple-system, BlinkMacSystemFont, " Segoe UI", Roboto, " Helvetica Neue", Arial, sans-serif";
+        }
+
+        #search-main-btn:hover {
+            border: 2px solid black;
+        }
+
+        /* first part of div */
+        #main_div{
+            margin: auto;
+            margin-top: 80px;
+
+        }
+       
+        #div1{
+            display: flex;
+            width: 93%;
+            height: 400px;
+            border: 1px solid red;
+            margin: auto;
+          
+        }
+        #sub_div1{
+            width: 120%;
+        }
+        #sub_div1>img{
+            width: 100%;
+        }
+        #sub_div2{
+            display: block;
+            margin-left: 30px;
+        }
+        #sub1_div1{
+            height: 180px;
+            display: flex;
+        }
+        #sub1_div1>img{
+            width: 30%;
+            height: 100%;
+        }
+        #sub1_div1>div{
+            margin-left: 20px;
+        }
+        #sub1_div2{
+            height: 180px;
+            display: flex;
+            margin-top: 10px;
+        }
+        #sub1_div2>div{
+            margin-left: 20px;
+        }
+        #sub1_div2>img{
+            width: 30%;
+            height: 100%;
+        }
+
+        /* second part of div */
+
+        #div2{
+            display: flex;
+            border: 1px solid black;
+            width: 93%;
+            margin: auto;
+        }
+        #div2>div{
+            width: 33%;
+            border: 1px solid rebeccapurple;
+            margin-left: 10px;
+            line-height: 5px;
+        }
+        #div2>div>img{
+            width: 100%;
+            height: 180px;
+        }
+        #sub2_div1>div>hr{
+            width: 80%;
+        
+        }
+        #sub2_div1>div{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search stays</h1>
+    <div id="search_box_second">
+        <div id="main-search">
+            <input placeholder="Going to" id="query" />
+            <span class="material-symbols-outlined">
+                location_on
+            </span>
+        </div>
+        <input type="date" placeholder="Check-in">
+        <input placeholder="Check-out" type="date">
+        <input placeholder="Travelers" />
+    </div>
+
+    <div id="2checkbox">
+        <input id="checkbox1" type="checkbox"> Add a
+        flight
+        <input id="checkbox2" type="checkbox"> Add a Car
+    </div>
+
+    <div id="search-main">
+        <button id="search-main-btn">Search</button>
+    </div>
+    </div>
+
+    <!-- middile section  -->
+    <div id="main_div">
+        <h1>What's New</h1>
+        <div id="div1">
+          <div id="sub_div1">
+            <img src="https://tpc.googlesyndication.com/simgad/5321417196171032542?" alt="Error">
+            <h3>Sunny days, flexible stays</h3>
+            <p>You've waited a long time for this!. Book your next trip now with free cancellation option. </p>
+          </div>
+          <div id="sub_div2">
+            <div id="sub1_div1">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2022/03/31/ORB_LGBTQ_2MenRunning_img_300x300_20220222.jpg?impolicy=fcrop&w=200&h=200&q=medium" alt="">
+                <div>
+                    <h3>Travel as You Are</h3>
+                    <p>Find LGBTQ-welcoming Hotels,travel ideas, Pride event and More</p>
+                </div>
+              
+             </div>
+             <div id="sub1_div2">
+               <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/08/23/ORB_MQ-TS_HU_164x152.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+                <div>
+                    <h3>Hotel Under $99</h3>
+                    <p>Choose from your inventory of select hotels all priced for $99 or less per Night</p>
+                </div>
+              
+             </div>
+          </div>
+        
+        </div>
+
+        <h1>Last-minute hotel deals</h1>
+        <div id="div2">
+            <div id="sub2_div1">
+                <img src="https://images.trvl-media.com/hotels/1000000/10000/1500/1443/c10675a3_b.jpg" alt="">
+                <h3>The Venetian Resort Las Vegas</h3>
+                <p>Las Vegas</p>
+                <p>4.5/5 (18067 reviews)</p>
+                <div> <hr align="left">
+                    <button>25% off</button></div>
+               <h5>fully refundable options</h5>
+            </div>
+            <div>
+                <img src="https://images.trvl-media.com/hotels/2000000/1190000/1184300/1184243/693f3cf6_b.jpg" alt="">
+                <h3>Wynn Las Vegas</h3>
+                <p>Las Vegas</p>
+                <p>4.5/5 (14067 reviews)</p>
+            </div>
+            <div>
+                <img src="https://images.trvl-media.com/hotels/21000000/20870000/20868200/20868143/3fd286ee_b.jpg" alt="">
+                <h3>Mr.C Seaport</h3>
+                <p>New York</p>
+                <p>4.4/5 (14067 reviews)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
