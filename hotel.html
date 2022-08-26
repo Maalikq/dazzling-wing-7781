@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- //////////////////// -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <div class="main_div">
+    <div id="search_box_second">
+            <div id="main-search">
+                <input placeholder="Going to" id="query" />
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+            </div>
+            <input type="date" placeholder="Check-in" id="date">
+            <input placeholder="Check-out" type="date">
+            <input placeholder="Travelers" />
+            <div id="search-main">
+                <button id="search-main-btn" onclick="searchBtn()">Search</button>
+            </div>
+        </div>
+        <!-- ............................................sidebar............................................ -->
+        <div id="entire_div">
+        <div id="sidebar">
+            <div id="sub_sidebar1">
+                    <h3>Search by property name</h3>
+                    <input type="text" placeholder="e.g. Best Westorn">
+                    <hr>
+            </div>
+            <h2>Filter by</h2>
+            <div id="sidebar_filter">
+                <h5>Populars filters</h5>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Hot Tub</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Har Mandir Sahib</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Water Park</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Ocien View</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Stair-free path to entrance</label>
+            </div>
+         
+            <div id="sidebar_guest">
+                <h5>Guest Rating</h5>
+                <input type="radio" id="any">
+                <label for="any">Any</label><br>
+                <input type="radio" id="any">
+                <label for="any">Wonderful 4.5+</label><br>
+                <input type="radio" id="any">
+                <label for="any">Very good 4+</label><br>
+                <input type="radio" id="any">
+                <label for="any">Good 3.5+</label><br>
+            </div>
+            <div id="sidebar_payment">
+                <h5>Payment type</h5>
+                <input type="checkbox" name="payment">
+                <label for="payment">
+                    Fully refundable</label><br>
+
+                <input type="checkbox" name="payment">
+                <label for="payment">
+                    Reserve now, pay later</label>          
+                  </div>
+                  
+                  <div id="sidebar_property">
+                    <h5>Property type</h5>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                    Cabin</label><br>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                  Pension</label><br>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                   Hotel resort</label><br>
+                  </div>
+
+                  <div id="Neighborhood">
+                    <h5>Neighborhood</h5>
+                    <input type="radio" id="Nhood">
+                    <label for="Nhood">Patna</label><br>
+                    <input type="radio" id="Nhood">
+                    <label for="Nhood">Rajendra Nagar</label><br>
+                  </div>
+
+                  <div id="location">
+                    <h5>Popular locations</h5>
+                    <input type="radio" id="loc">
+                    <label for="loc">Phulwari Sharif</label><br>
+                    <input type="radio" id="loc">
+                    <label for="loc">Buddha Smriti Park</label><br>
+                    <input type="radio" id="loc">
+                    <label for="loc">ISKCON Temple Patna</label><br>
+                  </div>
+
+                  <div id="plans">
+                    <h5>Meal plans available</h5>
+                    <input type="checkbox" name="plan">
+                    <label for="plan">
+                        Breakfast included</label><br>
+                       <input type="checkbox" name="plan">
+                       <label for="plan">
+                        Lunch included</label><br>
+                          <input type="checkbox" name="plan">
+                          <label for="plan">
+                            Dinner included</label><br>
+                  </div>
+        </div>
+        <div id="main_container">
+           
+
+        </div>
+
+
+        <div id="right_sidebar">
+          <div>
+            <img src="https://graphicriver.img.customer.envatousercontent.com/files/62273606/preview_multipurpose_banner_ad_design.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=9bdaa62cc6a0915b642e27f67b63dc37" alt="">
+          </div>
+          <div>
+            <img src="https://s3.envato.com/files/62273611/PNG%20Blue/Banner%20blue%20120x600.png" alt="">
+          </div>
+          </div>
+     <div>
+    </div>
+</body>
+</html>
+<script>
+    function append(){
+        let container=document.getElementById("main_container");
+        container.innerHTML=null;
+        let hotelDataLs=JSON.parse(localStorage.getItem("hotelData"))||[];
+        hotelDataLs.forEach(function(el){
+            let box=document.createElement('div');
+            box.setAttribute('id','boxId')
+
+            let img_bag=document.createElement('div');
+            img_bag.setAttribute('id','img_bag');
+
+            let hotel_title=document.createElement("div");
+            hotel_title.setAttribute('id',"hotel_title");
+
+            let price=document.createElement('div');
+            price.setAttribute('id','priceid');
+
+            let review=document.createElement('div');
+            review.setAttribute('id','reviewid');
+
+            let rating=document.createElement('h4');
+            rating.setAttribute('id','ratingid');
+            rating.innerText=`${el.rating}/10`;
+
+            let reviews=document.createElement('p');
+            reviews.innerText=`(${el.reviews} reviews) `;
+
+            let price1=document.createElement('h2');
+            price1.innerText=`$ ${el.price}`;
+            let price2=document.createElement('p');
+            price2.innerText='$170 total';
+
+            let image=document.createElement('img');
+            image.src=el.url;
+
+            let hotel=document.createElement('h2');
+            hotel.innerText=el.hotel;
+
+            let city=document.createElement('p');
+            city.innerText=el.city;
+
+
+            review.append(rating,reviews);
+            price.append(price1,price2);
+
+
+            img_bag.append(image);
+            hotel_title.append(hotel,city,review);
+            box.append(img_bag,hotel_title,price);
+
+           
+            container.append(box);
+        })
+    }
+ append();
+
+
+</script>
+<script src="script/navbar.js" type="module"></script>
+<script src="https://kit.fontawesome.com/8d772ce65c.js" crossorigin="anonymous"></script>

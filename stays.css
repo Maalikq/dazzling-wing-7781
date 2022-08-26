@@ -1,0 +1,296 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    margin-left: 70px;
+}
+
+#search_box_second {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin-bottom: 1.25rem;
+}
+
+#main-search {
+    position: relative;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    padding: 4px;
+    height: 0;
+}
+
+.material-symbols-outlined {
+    height: 100px;
+    width: 100px;
+}
+
+#main-search input {
+    /* width: 200px; */
+    width: 93%;
+    height: 40px;
+    position: relative;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+#checkbox1 {
+    margin-left: 80px;
+    width: 17px;
+    height: 15px;
+}
+
+#checkbox2 {
+    margin-left: 100px;
+    width: 17px;
+    height: 15px;
+}
+
+#search-main-btn {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-top: 10px;
+    padding: 15px 66px;
+    color: white;
+    background-color: #c83259;
+    border: 0px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "apple-system, BlinkMacSystemFont, " Segoe UI", Roboto, " Helvetica Neue", Arial, sans-serif";
+}
+
+#search-main-btn:hover {
+    border: 2px solid black;
+}
+
+/* first part of div */
+#main_div{
+    margin: auto;
+    margin-top: 80px;
+
+}
+
+#div1{
+    display: flex;
+    width: 93%;
+    height: 400px;
+    margin: auto;
+  
+}
+#sub_div1{
+    width: 120%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#sub_div1>img{
+    width: 100%;
+}
+#sub_div2{
+    display: block;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#sub1_div1{
+    height: 180px;
+    display: flex;
+}
+#sub1_div1>img{
+    width: 30%;
+    height: 100%;
+}
+#sub1_div1>div{
+    margin-left: 20px;
+}
+#sub1_div2{
+    height: 180px;
+    display: flex;
+    margin-top: 10px;
+}
+#sub1_div2>div{
+    margin-left: 20px;
+}
+#sub1_div2>img{
+    width: 30%;
+    height: 100%;
+}
+
+
+/* second part of div */
+
+#div2{
+    display: flex;
+    width: 93%;
+    margin: auto;
+}
+#div2>div{
+    width: 33%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-left: 10px;
+    line-height: 5px;
+}
+#div2>div>img{
+    width: 100%;
+    height: 180px;
+}
+#sub2_div1>div>hr{
+    width: 80%;
+
+}
+
+#sub2_div1>div{
+    display: flex;
+}
+#sub2_div1>div>button{
+    margin-right: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#sub2_div1>h4{
+    color: green;
+}
+#sub2_div1>div>h2{
+margin-left: 190px;
+}
+
+/* /////////////////////////////////////////// */
+#sub2_div2>div>hr{
+    width: 80%;
+
+}
+#sub2_div2>div{
+    display: flex;
+}
+#sub2_div2>div>button{
+    margin-right: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#sub2_div2>h4{
+    color: green;
+}
+#sub2_div2>div>h2{
+margin-left: 190px;
+}
+/* //////////////////////////////////////////////// */
+#sub2_div3>div>hr{
+    width: 80%;
+
+}
+#sub2_div3>div{
+    display: flex;
+}
+#sub2_div3>div>button{
+    margin-right: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#sub2_div3>h4{
+    color: green;
+}
+#sub2_div3>div>h2{
+margin-left: 190px;
+}
+
+/* features section */
+#feature_div{
+    display: flex;
+    width: 93%;
+    margin: auto;
+    border: 1px solid gold;
+}
+#fdiv1{
+    width: 80%;
+    height: 200px;
+}
+#fdiv1>img{
+    width: 100%;
+    height: 100%;
+}
+
+#fdiv2{
+    width: 20%;
+    height: 200px;
+    margin-left: 10px;
+}
+#fdiv2>img{
+    width: 100%;
+    height: 100%;
+}
+/* travel div */
+#travel_div{
+    display: flex;
+    width: 93%;
+    margin: auto;
+}
+#travel_div>div{
+    width: 33%;
+    margin-left: 10px;
+}
+#travel_div>div>img{
+    width: 100%;
+}
+
+
+/* middile */
+#middile{
+    display: flex;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* footer div */
+#footer_div{
+    display: flex;
+    width: 93%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+#footer_sub_div1{
+    width: 50%;
+    height: 400px;
+    margin-right: 20px;
+    line-height: 5px;
+}
+#footer_sub_div1>img{
+    width: 100%;
+    height: 100%;
+}
+#footer_sub_div3{
+    width: 20%;
+    line-height: 5px;
+
+}
+#footer_sub_div3>img{
+    width: 100%;
+}
+#footer_sub_div2>div>input{
+    padding: 20px 30px;
+}
+#footer_sub_div2>div>button{
+    padding: 20px 30px;
+    color: white;
+    background-color: #c83259;
+    border: none;
+}
