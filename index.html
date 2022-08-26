@@ -39,14 +39,14 @@
       <hr>
       <div id="search_box_second">
         <div id="main-search">
-          <input placeholder="Going to" id="query" />
+          <input placeholder="Going to" id="query"  oninput="debouncing(query,1000)"/>
           <span class="material-symbols-outlined">
             location_on
           </span>
         </div>
-        <input type="date" placeholder="Check-in">
-        <input placeholder="Check-out" type="date">
-        <input placeholder="Travelers" />
+        <input type="date" placeholder="Check-in" id="datecheck">
+        <input placeholder="Check-out" type="date" id="dateout">
+        <input placeholder="Travelers" id="travel"/>
       </div>
 
       <div id="2checkbox">
@@ -60,6 +60,7 @@
       </div>
     </div>
   </div>
+  <!-- fixedbtn css is in navbar.css -->
   <button id="fixedbtn" onclick="submit()">💬Help</button>
 <!-- 1st images box -->
   <div id="box1">
@@ -119,7 +120,20 @@
       </div>
     </div>
   </div>
+<!-- Advertise -->
+<div id="adver">
+  <img id="thirfland"
+    src="https://www.independentcottages.co.uk/assets/images/hero/luxury-peak-district-md.jpg"/>
+    <button id="thrilbtn">Ad</button>
+  <div class="add_inner">
+   
+    <img id="thrifly" src="https://tpc.googlesyndication.com/simgad/7966280916834571352?"/>
+    <h3>Spend less.Adventure more</h3>
+    <p>Cruise this season in the absolute best car for your money</p>
+  </div>
+</div>
 
+<!-- Advertise end -->
 <!-- 3rd images box Explore local -->
   <div id="box3">
     <div>
@@ -140,17 +154,20 @@
   <div id="help_desk">
     <h1>Here to help keep you on the move</h1>
     <div id="help_desk_box">
-      <div>
-        <h3>Change or cancel a trip</h3>
-        <h5>Make updates to your itinerary or cancle abooking</h5>
+      <div id="editdiv">
+       <div id="pencil"> <i  class="fa-solid fa-pencil"></i></div>
+        <h3 id="helptext">Change or cancel a trip</h3>
+        <p id="helptext2">Make updates to your itinerary or cancel a booking</p>
       </div>
-      <div>
-        <h3>Use a credit or coupon</h3>
-        <h5>Apply a coupon code or credit to a new trip</h5>
+      <div id="editdiv">
+        <div id="dollar"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+        <h3 id="doltext">Use a credit or coupon</h3>
+        <p id="doltext2">Apply a coupon code or credit to a new trip</p>
       </div>
-      <div>
-        <h3>Track your refund</h3>
-        <h5>Check the status of a refund currently in progress</h5>
+      <div id="editdiv">
+        <div id="dollar">💬</div>
+        <h3 id="doltext">Track your refund</h3>
+        <p id="doltext2">Check the status of a refund currently in progress</p>
       </div>
     </div>
   </div>
