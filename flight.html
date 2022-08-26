@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+  <link rel="stylesheet" href="flight.css" />
+  <body>
+    <div id="box">
+      <div id="journey">
+        <input type="text" id="leaving_from" />
+        <input type="text" id="going_to" />
+        <input type="date" name="" id="departing" />
+        <input type="date" name="" id="returning" />
+      </div>
+      <div id="other_option">
+        <input type="checkbox" placeholder="" name="" id="add_a_place" />Add a
+        place to stay
+        <!-- <p></p> -->
+        <input type="checkbox" name="" id="add_a_car" />Add a car
+        <!-- <p></p> -->
+      </div>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>
+<script>
+  // let url=`https://orbitz-ujjawal-api.herokuapp.com/flights`;
+  let dataArr = [];
+
+  getData();
+  async function getData() {
+    let url = "https://orbitz-ujjawal-api.herokuapp.com/flights";
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data);
+    // dataArr = data.menu.data;
+    console.log(dataArr);
+    appendData(data);
+  }
+
+  function appendData(data) {
+    let container = document.getElementById("container");
+    // container.innerHTML = "";
+
+    data.forEach((el, i) => {
+      let div = document.createElement("div");
+      div.className = "flight_details";
+
+      let div2 = document.createElement("div");
+      let div3 = document.createElement("div");
+      div2.className = "material-symbols-outlined";
+      // div2.innerText=Flight;
+
+      let time = document.createElement("h3");
+      time.innerText = el.Time;
+
+      let flight = document.createElement("p");
+      flight.innerText =el.flight;
+
+      let from = document.createElement("p");
+      from.innerText = el.from;
+
+      let earn = document.createElement("p");
+      earn.innerText = el.Earn;
+      earn.className="earnClass";
+
+      // let hault = document.createElement("p");
+      // hault.innerText = " ";
+
+      let stop = document.createElement("p");
+      stop.innerText = el.stop;
+
+      let price = document.createElement("h3");
+      price.innerText = el.price;
+
+      let time_taken = document.createElement("p");
+      time_taken.innerText = el.time + " " + el.hault;
+
+      div2.append("Flight");
+      div3.append(div2,flight);
+      div3.className="div3_flight";
+
+      div.append(time, time_taken, price, from, stop, earn, div3);
+
+      container.append(div);
+    });
+  }
+</script>

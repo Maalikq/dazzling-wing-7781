@@ -1,0 +1,71 @@
+.flight_details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  border: 2px solid;
+}
+.div3_flight {
+  display: flex;
+  text-align: center;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+#trip_type {
+  width: 40%;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#roundtrip,
+#multicity,
+#oneway {
+  padding: 10px 20px;
+}
+#main-search {
+  display: flex;
+  gap: 10px;
+}
+#from {
+  width: 1000px;
+}
+#yes {
+  background-color: white;
+  margin-left: 335px;
+  width: 33px;
+  border: 1px solid;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 1;
+}
+#two_no {
+  margin-left: 365px;
+}
+#start-search {
+  height: auto;
+}
+#seaimage {
+  height: 450px;
+}
+#main-search input {
+  width: 350px;
+}
+#calender1,#calender2{
+width: 150px;
+/* height: 150px; */
+}
+#points{
+  border-bottom: 2px solid #1e7ea1;
+ color: #1e7ea1;
+}
+#start-search{
+  height: 350px;
+}
+#search-main-btn:hover {
+  border: 2px solid white;
+}
+.earnClass{
+  color: rgb(154, 11, 149);
+}
