@@ -55,7 +55,7 @@ let navbar = () => {
             </div>
             <br>
             <div id="dis_flex">
-            <a href="flip.html">Groups & meetings</a>
+            <a href="#">Groups & meetings</a>
             </div>
             <br>
             <div id="dis_flex">
@@ -134,7 +134,7 @@ let footer_main = () => {
         <p><a href="https://www.orbitz.com/service/">Support</a></p>
         <p><a href="https://www.orbitz.com/service/#/articles/560/34/16267">Cancel your hotel or vacation rental booking</a></p>
         <p><a href="https://www.orbitz.com/service/#/articles/569/34/16477">Cancel your flight</a></p>
-        <p><a href="https://www.orbitz.com/service/#/myTrips/16138">Refund timeline,policies&processes</a></p>
+        <p><a href="https://www.orbitz.com/service/#/myTrips/16138">Refund timelines,policies & processes</a></p>
         <p><a href="https://www.orbitz.com/service/#/article/19518">Use an Orbitz Coupon</a></p>
         
         </div>
