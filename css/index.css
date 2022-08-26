@@ -123,6 +123,7 @@ hr{
   gap: 20px;
   grid-template-rows: auto;
   cursor: pointer;
+
   
 }
 
@@ -147,6 +148,7 @@ hr{
   border: 1px sold teal;
   overflow: hidden;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 #Featured_offers_1 {
@@ -192,6 +194,7 @@ img {
 #help_desk {
   width: 80%;
   margin: auto;
+  cursor: pointer;
 }
 #helph1 {
   /* border: 1px solid red; */
@@ -199,18 +202,62 @@ img {
   margin-top: 10px;
 }
 
+#pencil{
+ /* border: 1px solid red; */
+ width: 2px;
+ height: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 340px;
+ margin-top: -10px;
+ font-size: 0.775rem;
+}
+#helptext{
+  margin-top: -10px;
+  margin-left: -15px;
+}
+#helptext2{
+  color: gray;
+  margin-top: 5px;
+  font-size: 0.775rem;
+  margin-left: -15px;
+}
+#dollar{
+  /* border: 1px solid red; */
+  width: 2px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 330px;
+  margin-top: -15px;
+ }
+ #doltext{
+  margin-left: -15px;
+   margin-top: -10px;
+ }
+ #doltext2{
+   color: gray;
+   margin-top: 5px;
+   font-size: 0.775rem;
+   margin-left: -15px;
+ }
+ 
 #help_desk_box {
+  /* border: 2px solid red ; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: min-content;
   gap: 25px;
   margin-top: 20px;
 }
-#help_desk_box div {
+#editdiv {
   border: 1px solid gray;
-  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
+  overflow: hidden;
 }
 /*  <!-- 5th Travelling tips section --> css start here */
 #Traveling_tips {
@@ -228,6 +275,7 @@ img {
 
 #Traveling_tips_inner {
   position: absolute;
+  margin-top: -20px;
   bottom: 1rem;
   padding-left: 2rem;
   font-size: 1.25rem;
@@ -248,6 +296,11 @@ img {
   color: teal;
   border: 1px solid teal;
   font-weight: bold;
+  background-color: white;
+}
+#travelbtn:hover{
+  background-color: rgb(217, 243, 243);
+  cursor: pointer;
 }
 /* <!-- 6th only 1 image book your trip  css start here--> */
 #only2image{
@@ -364,5 +417,35 @@ img {
   height: 45px;
   border: 0px;
 }
+/* advertise Css start here  */
 
-
+#adver {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 1px solid gray;
+  background-color: white;
+}
+.add_inner {
+  margin: auto;
+  flex-wrap: nowrap;
+}
+#thrifly{
+  width: 80px;
+}
+#thrilbtn{
+  width: 40px;
+  background-color: white;
+  position: absolute;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 0.755rem;
+}
+#thrifland{
+    opacity: calc(0.8);
+    overflow: hidden;
+    filter: brightness(50%);
+}
