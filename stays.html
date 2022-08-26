@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stays</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- //////////////////////////// -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="stays.css">
@@ -13,6 +21,8 @@
 </head>
 
 <body>
+    <div id="navbar"></div>
+
     <h1>Search stays</h1>
     <div id="search_box_second">
         <div id="main-search">
@@ -182,11 +192,14 @@
             </div>
         </div>
     </div>
-
+  <!-- footer section start -->
+  <div id="footer_1"></div>
+  <div id="footer_end"></div>
 </body>
 
 </html>
 <script>
+
     let searchBtn = async (query) => {
 
         let myQuery = document.getElementById("query").value;
@@ -200,3 +213,5 @@
 
     }
 </script>
+<script src="script/navbar.js" type="module"></script>
+<script src="https://kit.fontawesome.com/8d772ce65c.js" crossorigin="anonymous"></script>
