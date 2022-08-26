@@ -49,11 +49,13 @@
         border: 0.1px solid grey;
       }
       #p1{
-        font-size: 13px;
+        font-size: 14px;
         color: gray;
+        margin-top: -31px;
       }
       #p2{
         margin-top: 13px;
+        color: gray;
       }
      #p3{
        text-align: center;
@@ -66,11 +68,29 @@
      }
      #apl{
         width: 5%;
-        display: block;
-        padding-top: 11px;
+        display: flex;
+        /* padding-top: 11px; */
         margin: auto;
         
      }
+     #bx1{
+        width: 5%;
+        margin-top: -11px;
+     }
+     
+  
+  #p2>a{
+    text-decoration: none;
+    margin: auto;
+    width: 50%;
+    color: teal;
+
+  }
+  #her{
+    background-color:rgb(235,182,196) ;
+    border: none;
+    color: white;
+  }
     </style>
 
 </head>
@@ -84,16 +104,19 @@
             <input placeholder="Firstname" id="name" type="text">
             <input placeholder="lastname" id="name1" type="text">
             <input placeholder="password" id="password" type="password">
-            <input type="checkbox">
+            <input id="bx1" type="checkbox">
             <p id="p1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
-            <p id="p2">By creating an account, I agree to the Orbitz <a href="">Terms and Conditions,</a>  <a href="">Privacy Statement</a>  <a href="">Orbitz Rewards Terms and Conditions</a>  </p>
-            <input type="submit" value="continue">
+            <p id="p2">By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms">Terms and Conditions,</a>  <a href="https://www.orbitz.com/lp/lg-privacy">Privacy Statement</a> and  <a href="https://www.orbitz.com/rewards/terms">Orbitz Rewards Terms and Conditions</a>  </p>
+            <input id="her" type="submit" value="continue">
            
             <p id="p3"> Already have an account <a href="">       Sign in</a> </p>
             <p id="p4">or continue with</p>
-             <div id="apl">
-            <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
-            <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+           
+            <div id="apl">
+             <div><a href=""><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="playstore"> </a></div>
+             <div><a href=""><img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="playstore"> </a></div>
+            
+            
              </div>
         </form>
 
