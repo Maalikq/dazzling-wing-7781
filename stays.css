@@ -1,3 +1,9 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
+    font-family: "Roboto", sans-serif;
+}
 h1 {
     margin-left: 70px;
 }
@@ -119,6 +125,7 @@ h1 {
     width: 30%;
     height: 100%;
 }
+
 
 /* second part of div */
 
