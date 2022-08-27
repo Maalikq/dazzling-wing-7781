@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
     
     <style>
         #sh1{
-            margin-left: 520px;
+            margin-left: 360px;
+            margin-top: 40px;
         }
         #sbt1>button{
     
@@ -129,12 +133,13 @@
 #sf1{
   border: 1px solid grey;
   width: 500px;
-  height: 63%;
+  height: 60px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 190px;
 }
 #sf1>h3,#sf1>p{
-  text-align: center;
+  margin-left: 12px;
+  margin-top: 7px;
 }
 #sf1>p{
  color: gray;
@@ -149,6 +154,8 @@
     </style>
 </head>
 <body>
+  <div id="navbar"></div>
+ 
     <h1 id="sh1">Trip</h1>
    <img id="i1" src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" alt="error">
    <div id="sbt1">
@@ -253,5 +260,35 @@
         alt="" />
     </div3>
   </div>
+<!-- footer -->
+  <div id="footer_1"></div>
+  <div id="footer_end"></div>
 </body>
 </html>
+<script src="script/navbar.js" type="module"></script>
+<script>
+  import { navbar, footer_main, end } from "../components/navbar.js";
+
+
+document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("footer_1").innerHTML = footer_main();
+document.getElementById("footer_end").innerHTML = end();
+
+document.getElementById("dropbtn").addEventListener("click", () => {
+  document.getElementById("myDropdown").classList.toggle("show");
+});
+
+
+window.onclick = function (event) {
+  if (!event.target.matches("#dropbtn")) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+</script>
