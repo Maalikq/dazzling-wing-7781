@@ -1,0 +1,451 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+}
+/* <!-- 1st images box --> css start here*/
+#seaimage {
+  width: 100%;
+  height: 360px;
+}
+
+
+#search {
+  position: relative;
+}
+
+#start-search{
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: absolute;
+  width: 80%;
+  height: 280px;
+  top: 3rem;
+  left: 10%;
+  right: 10%;
+  background-color: white;
+}
+
+#first-search {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  height: 2.5rem;
+  margin-bottom: 20px;
+ 
+}
+hr{
+  border-color: 1px solid gray ;
+  margin-top: -20px;
+}
+#first-search :hover {
+  border-bottom: 1px solid teal;
+  color: teal;
+}
+#search_box_second {
+  width: 85%;
+  margin: auto;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin-bottom: 1.25rem;
+}
+
+#main-search {
+  position: relative;
+}
+.material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  padding: 4px;
+  height: 0;
+}
+
+.material-symbols-outlined {
+  height: 100px;
+  width: 100px;
+}
+#main-search input {
+  /* width: 200px; */
+  width: 100%;
+  height: 40px;
+  position: relative;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+#checkbox1{
+  margin-left: 80px;
+  width: 17px; 
+  height: 15px;
+}
+#checkbox2{
+  margin-left: 100px;
+  width: 17px; 
+  height: 15px;
+}
+
+
+#search-main-btn {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-top: 10px;
+  padding: 15px 66px;
+  color: white;
+  background-color:#c83259;
+  border: 0px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif";
+}
+#search-main-btn:hover {
+  border: 2px solid black;
+}
+/* <!-- 1st images box --> css start here*/
+#box1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: auto;
+  cursor: pointer;
+
+  
+}
+
+/* <!-- 2nd Images box --> css start here*/
+ #featurehead {
+  /* border:1px solid red; */
+  margin-left: 70px;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  font-size: 30px;
+} 
+#Featured_offers {
+  width: 80%;
+  margin: auto;
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  grid-template-rows: auto;
+  position: relative;
+  border: 1px sold teal;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#Featured_offers_1 {
+  color: whitesmoke;
+  position: absolute;
+  border: 1px sold teal;
+  bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+img {
+  width: 100%;
+}
+
+/* <!-- 3rd images box Explore local -->css start here */
+#box3 {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 70% 28%;
+  gap: 2%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#box3 div:nth-child(1) img {
+  height: 250px;
+}
+#box3 div:nth-child(2) img {
+  height: 250px;
+}
+
+#box3_text {
+  /* border: 1px solid red; */
+  color: aliceblue;
+  position: absolute;
+  bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+/* <!-- 4th here to help section --> css start here */
+#help_desk {
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+#helph1 {
+  /* border: 1px solid red; */
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+#pencil{
+ /* border: 1px solid red; */
+ width: 2px;
+ height: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 340px;
+ margin-top: -10px;
+ font-size: 0.775rem;
+}
+#helptext{
+  margin-top: -10px;
+  margin-left: -15px;
+}
+#helptext2{
+  color: gray;
+  margin-top: 5px;
+  font-size: 0.775rem;
+  margin-left: -15px;
+}
+#dollar{
+  /* border: 1px solid red; */
+  width: 2px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 330px;
+  margin-top: -15px;
+ }
+ #doltext{
+  margin-left: -15px;
+   margin-top: -10px;
+ }
+ #doltext2{
+   color: gray;
+   margin-top: 5px;
+   font-size: 0.775rem;
+   margin-left: -15px;
+ }
+ 
+#help_desk_box {
+  /* border: 2px solid red ; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: min-content;
+  gap: 25px;
+  margin-top: 20px;
+}
+#editdiv {
+  border: 1px solid gray;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  overflow: hidden;
+}
+/*  <!-- 5th Travelling tips section --> css start here */
+#Traveling_tips {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 2rem;
+  
+}
+
+
+#Traveling_tips_inner {
+  position: absolute;
+  margin-top: -20px;
+  bottom: 1rem;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  color: whitesmoke;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+#dark{
+    opacity: calc(0.8);
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+#travelbtn {
+  padding: 5px 7px;
+  margin-top: 5px;
+  color: teal;
+  border: 1px solid teal;
+  font-weight: bold;
+  background-color: white;
+}
+#travelbtn:hover{
+  background-color: rgb(217, 243, 243);
+  cursor: pointer;
+}
+/* <!-- 6th only 1 image book your trip  css start here--> */
+#only2image{
+  /* border: 1px solid red ; */
+  width:65%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+/*   <!-- 7th Rewards are waiting section css start here--> */
+#box4 {
+  border: 3px solid red ;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  height: min-content;
+  margin-top: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  margin: auto;
+}
+#box4 > div1 img {
+  height: 100%;
+  object-fit: cover;
+}
+#box4 > div3 img {
+  object-fit: cover;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#box4_inner {
+  width: 90%;
+}
+#box4head{
+  /* border: 1px solid red ; */
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+#box4_inner ul {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-size: 0.855rem;
+  color: gray;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+#code_h3{
+  padding-left: 20px; 
+  margin-bottom: 10px
+}
+#countrycode {
+  display: flex;
+  gap: 1rem;
+  border: 1px gray;
+  justify-content: center;
+  height: auto;
+  margin-right: 60px;
+  flex-wrap: wrap;
+ 
+}
+#countrycode select{
+  padding: 10px 10px;
+}
+#gettheapp {
+  background-color: rgb(200, 50, 89);
+  color: aliceblue;
+  padding: 5px 30px;
+  border: 0px;
+}
+#code_p{
+  padding-left: 10px;
+  padding: 10px;
+  color: gray;
+  font-size: 0.775rem;
+  
+}
+/*  8th more destinations section css start here */
+#More_destinations {
+  margin-top: 20px;
+}
+#More_destinations_div select option {
+  color: teal;
+}
+
+#More_destinations h1 {
+  margin-bottom: 10px;
+  margin-left: 145px;
+}
+
+#More_destinations_div {
+  outline: none;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
+}
+#More_destinations_div >div{
+  /* border: 1px solid red; */
+  outline: none;
+  padding: 10px 10px;
+  background-color: white;
+}
+
+#More_destinations_div select {
+/* border: 1 px solid blue; */
+  outline: none;
+  width: 100%;
+  height: 45px;
+  border: 0px;
+}
+/* advertise Css start here  */
+
+#adver {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 1px solid gray;
+  background-color: white;
+}
+.add_inner {
+  margin: auto;
+  flex-wrap: nowrap;
+}
+#thrifly{
+  width: 80px;
+}
+#thrilbtn{
+  width: 40px;
+  background-color: white;
+  position: absolute;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 0.755rem;
+}
+#thrifland{
+    opacity: calc(0.8);
+    overflow: hidden;
+    filter: brightness(50%);
+}

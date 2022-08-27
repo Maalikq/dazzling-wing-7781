@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz Hotel Deals, Flights, Cheap Vacations & Rentals Cars</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./package.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <div id="navbar"></div>
+    <div id="container">
+        <div id="div1">
+       <h1 id="first">Save with vacation packages</h1>
+       <p>Choose two or more items and save on your trip:</p>
+       <button id="btn1">Stay added</button>
+       <button id="btn2">Flight added</button>
+       <button id="btn3">Add a Car</button>
+       <select name="" id="select1">
+        <option value="">1 Room, 2 Travelers 
+            </option>
+     </select>
+     <select name="" id="select2">
+        <option value="">Economy</option>
+        <option value="">Premium economy</option>
+        <option value="">Business class</option>
+        <option value="">First class</option>
+     </select>
+     <div id="div2">
+      <input type="text" placeholder="Leaving From" id="query">
+      <span class="material-symbols-outlined">
+        
+    </span>
+    <button id="btn4"><span style='font-size:30px;'>&#8646;</span></button>
+    <input type="text" placeholder="Going To" >
+      
+    <input type="date" id="da1">
+    
+   
+     </div>
+
+     <div id="check">
+      <input type="checkbox"> 
+      <p>I only need accommodations for part of my trip</p>
+    </div>
+     <button id="search" onclick="searchButton()">Search</button>
+    </div>
+    </div>  
+   
+
+    <div id="container2">
+      <h1>What's new</h1>
+      
+       <div id="middle">
+       <div id="m1">
+        
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/4ORB_PackagesUnder499_sfimg_562x240_20200512.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+        <h3>Get away for under $499</h3>
+        <p>You can save more when you book a flight and hotel together.</p>
+       </div>
+       <div id="m2">
+        <div id="im1">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/5ORB_HOTELS_Marquee1_Coupon_121119.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+      </div>
+      <div id="im2">
+        <h2>All-inclusive Vacations</h2>
+        <p>Care-free luxury makes travel more rewarding.</p>
+      </div>
+      </div>
+
+    </div>
+  <!-- middle 2 -->
+
+    <h1>Travel tips from the pros</h1>
+    <div id="middle2">
+      <div id="m3">
+  <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_5-ways-to-upgrade-your-trip.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+  <p>Here are five easy ways to take your trip from ordinary to out of this world.</p>
+      </div>
+
+      <div id="m3">
+<img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_Caribbean_all_inclusives.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+  <p>Not every all-inclusive is the same here is where to book based on your personality type.</p>
+      </div>
+
+     <div id="m3">
+     <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_10_things_all-inclusive_resort.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+     <p>From cooking lessons to safari tours, these resorts will take you inclusive stays to the next level.</p>
+
+     </div>
+
+    </div>
+
+
+<!-- middle 3 -->
+      
+
+
+      <h1>Featured offers</h1>
+   <div id="middle3">
+
+      <div id="m4">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg" alt="">
+      </div>
+      <div id="m5">
+        <img src="https://tpc.googlesyndication.com/simgad/2468637394072322380" alt="">
+      </div>
+
+   </div>
+
+   <!-- middle 4 -->
+
+   <h1>Vacation your way</h1>
+
+   <div id="middle4">
+
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_PetFriendly_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Luxury_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_AllInclusive_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+       alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_LastMinute_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Beach_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Romantic_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+
+   </div>
+
+    </div>
+
+   <!-- 6th only 1 image book your trip -->
+  <div id="only2image">
+    <img src="https://tpc.googlesyndication.com/simgad/10056509806482740393?" alt="">
+  </div>
+  <!-- 7th Rewards are waiting section -->
+  <div id="box4">
+    <div1>
+      <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="" />
+    </div1>
+    <div id="box4_inner">
+      <div>
+        <h2 id="box4head">Rewards are waiting for you in the Orbitz app</h2>
+        <ul id="box4li">
+          <li>
+            Earn 4% back when you book your hotel in app, vs. 3% on site
+          </li>
+          <li>Get flight status and gate number notifications</li>
+          <li>
+            Have questions about your stay? Message your hotel right in the
+            app
+          </li>
+        </ul>
+
+        <h3 id="code_h3">Text yourself a download link</h3>
+        <div id="countrycode">
+          <select>
+            <option>Country code</option>
+            <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+            <option data-countryCode="AD" value="376">Andorra (+376)</option>
+            <option data-countryCode="AO" value="244">Angola (+244)</option>
+            <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+            <option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+            <option data-countryCode="AR" value="54">Argentina (+54)</option>
+            <option data-countryCode="AM" value="374">Armenia (+374)</option>
+            <option data-countryCode="AW" value="297">Aruba (+297)</option>
+            <option data-countryCode="AU" value="61">Australia (+61)</option>
+            <option data-countryCode="AT" value="43">Austria (+43)</option>
+            <option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+            <option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+            <option data-countryCode="BH" value="973">Bahrain (+973)</option>
+            <option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+            <option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+            <option data-countryCode="BY" value="375">Belarus (+375)</option>
+            <option data-countryCode="BE" value="32">Belgium (+32)</option>
+            <option data-countryCode="BZ" value="501">Belize (+501)</option>
+            <option data-countryCode="BJ" value="229">Benin (+229)</option>
+            <option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+            <option data-countryCode="BT" value="975">Bhutan (+975)</option>
+            <option data-countryCode="BO" value="591">Bolivia (+591)</option>
+            <option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+            <option data-countryCode="BW" value="267">Botswana (+267)</option>
+            <option data-countryCode="BR" value="55">Brazil (+55)</option>
+            <option data-countryCode="BN" value="673">Brunei (+673)</option>
+            <option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+            <option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+            <option data-countryCode="BI" value="257">Burundi (+257)</option>
+            <option data-countryCode="KH" value="855">Cambodia (+855)</option>
+            <option data-countryCode="CM" value="237">Cameroon (+237)</option>
+            <option data-countryCode="CA" value="1">Canada (+1)</option>
+            <option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
+            <option data-countryCode="KY" value="1345">Cayman Islands (+1345)/option>
+            <option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+            <option data-countryCode="CL" value="56">Chile (+56)</option>
+            <option data-countryCode="CN" value="86">China (+86)</option>
+            <option data-countryCode="CO" value="57">Colombia (+57)</option>
+            <option data-countryCode="KM" value="269">Comoros (+269)</option>
+            <option data-countryCode="CG" value="242">Congo (+242)</option>
+            <option data-countryCode="CK" value="682">Cook Islands (+682)</option>
+            <option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+            <option data-countryCode="HR" value="385">Croatia (+385)</option>
+            <option data-countryCode="CU" value="53">Cuba (+53)</option>
+            <option data-countryCode="CY" value="90392">Cyprus North (+90392)</option>
+            <option data-countryCode="CY" value="357">Cyprus South (+357)</option>
+            <option data-countryCode="CZ" value="42">Czech Republic (+42)</option>
+            <option data-countryCode="DK" value="45">Denmark (+45)</option>
+            <option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+            <option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+          </select>
+
+          <input placeholder="Phone number" />
+          <button id="gettheapp">Get the app</button>
+        </div>
+        <p id="code_p">
+          By providing your number, you agree to receive a one-time automated
+          text message with a link to get the app. Standard text message rates
+          may apply.
+        </p>
+      </div>
+    </div>
+    <div >
+      <img src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png"
+        alt=""  id="scan"/>
+    </div>
+  </div>
+<!-- 8th more destinations section -->
+  <div id="More_destinations">
+    <h1>More destinations</h1>
+    <div id="More_destinations_div">
+      <div id="select">
+        <select>
+          <option value="">Destination deals</option>
+          <option value="">Travel Deals</option>
+          <option value="">Hotels Under $100</option>
+          <option value="">Orbitz Hotel Coupon</option>
+          <option value="">All our Destinations</option>
+          <option value="">Flights Under $200</option>
+          <option value="">Orbitz Coupons</option>
+          <option value="">Car Rental Deals</option>
+          <option value="">Vacation Package Deals</option>
+          <option value="">Last Minute Travel Deals</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="">Top hotel beach destinations</option>
+          <option value="">Atlantic City hotels</option>
+          <option value="">Lahaina hotels</option>
+          <option value="">San Diego hotels</option>
+          <option value="">Honolulu hotels</option>
+          <option value="">Myrtle Beach hotels</option>
+          <option value="">Virginia Beach hotels</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="">Top hotel city destination</option>
+          <option>Austin hotels</option>
+          <option>Dallas hotels</option>
+          <option>Houston hotels</option>
+          <option>Las Vegas hotels</option>
+          <option>New Orleans hotels</option>
+          <option>Chicago hotels</option>
+          <option>Denver hotels</option>
+          <option>Scottsdale hotels</option>
+          <option>Nashville hotels</option>
+          <option>Phoenix hotels</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="">Top vacation destinations</option>
+          <option>Caribbean Vacations</option>
+          <option>Mexico Vacations</option>
+          <option>New York Vacations</option>
+          <option>Las Vegas Vacations</option>
+          <option>Disneyland Packages</option>
+          <option>Costa Rica Vacations</option>
+          <option>Orlando Vacations</option>
+          <option>Colorado Vacations</option>
+          <option>Hawaii Vacations</option>
+          <option>Miami Vacations</option>
+          <option>Punta Cuna Vacations</option>
+          <option>Florida Vacations</option>
+          <option >Key West Vacations</option>
+          <option>Grand Canyon Vacations</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="">Top flight destinations</option>
+          <option>Flights To Las Vegas</option>
+          <option>Flights To New York</option>
+          <option>Flights To Los Angeles</option>
+          <option>Flights To Chicago</option>
+          <option>Flights To San Diego</option>
+          <option>Flights To Seattle</option>
+          <option>Flights to Denver</option>
+          <option>Flights To San Francisco</option>
+          <option>Flights to Washington</option>
+          <option>Flights To Minneapolis St.Paul</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="">Top car rental destinations in America</option>
+          <option>Car rental in Atlanta</option>
+          <option>Car rental in Boston</option>
+          <option>Car rental in Chicago</option>
+          <option>Car rental in Cincinnati</option>
+          <option>Car rental in Dallas</option>
+          <option>Car rental in Denver</option>
+          <option>Car rental in Detroit</option>
+          <option>Car rental in Houston</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- footer section start -->
+  <div id="footer_1"></div>
+  <div id="footer_end"></div>
+
+</body>
+</html>
+<script src="script/index.js"></script>
+<script src="script/navbar.js" type="module"></script>
+<script src="https://kit.fontawesome.com/8d772ce65c.js" crossorigin="anonymous"></script>
+<!-- <script src="script/navbar.js" type="module"></script> -->
+<script src="./package.js"></script>
