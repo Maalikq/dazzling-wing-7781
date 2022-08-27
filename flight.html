@@ -11,41 +11,144 @@
   />
   <link rel="stylesheet" href="flight.css" />
   <body>
-    <div id="box">
-      <div id="journey">
-        <input type="text" id="leaving_from" />
-        <input type="text" id="going_to" />
-        <input type="date" name="" id="departing" />
-        <input type="date" name="" id="returning" />
+    <div id="navbar">
+    
+    </div>
+    <div id="main_body">
+      <div id="side_div">
+        <div id="filter_by">
+          <h2>Filter by</h2>
+          <div id="stops">
+            <h3>Stops</h3>
+            <h3>From</h3>
+            <div>
+              <input type="checkbox" name="nonstops" id="" />Nonstop (54)
+            </div>
+
+            <p>$124</p>
+            <div><input type="checkbox" name="" id="" /> 1 Stop (70)</div>
+
+            <p>$105</p>
+            <div><input type="checkbox" name="" id="" />2 + Stops (1)</div>
+
+            <p>$225</p>
+          </div>
+          <div id="airlines">
+            <h3>Airlines</h3>
+            <h3>From</h3>
+            <div><input type="checkbox" name="" id="" />IndiGo (37)</div>
+            <p>$105</p>
+            <div><input type="checkbox" name="" id="" />Air India (29)</div>
+            <p>$137</p>
+            <div><input type="checkbox" name="" id="" />Vistara (28)</div>
+            <p>$151</p>
+            <div><input type="checkbox" name="" id="" />Go First (26)</div>
+            <p>$130</p>
+            <div><input type="checkbox" name="" id="" />FlexFlight (4)</div>
+            <p>$151</p>
+            <div>
+              <input type="checkbox" name="" id="" />Hahn Air Systems (1)
+            </div>
+            <p>$312</p>
+          </div>
+          <div id="travel_baggage">
+            <h3>Travel and baggage</h3>
+            <h3>From</h3>
+            <div>
+              <input type="checkbox" name="" id="" />Seat choice included
+            </div>
+
+            <p>$151</p>
+            <div>
+              <input type="checkbox" name="" id="" />Carry-on bag included
+            </div>
+
+            <p>$105</p>
+          </div>
+        </div>
       </div>
-      <div id="other_option">
-        <input type="checkbox" placeholder="" name="" id="add_a_place" />Add a
-        place to stay
-        <!-- <p></p> -->
-        <input type="checkbox" name="" id="add_a_car" />Add a car
-        <!-- <p></p> -->
+      <div id="container">
+        <div id="up_line">
+          <p style="font-weight:bold">Choose departing flight  </p>
+          <p style="font-weight:bold">></p>
+          <p>Choose returning flight  </p>
+          <p>></p>
+          <p>Review your trip</p>
+        </div>
+        <div id="flexible_date">
+          <h3>Flexible dates</h3>
+          <input type="datetime-local" name="" id="" />
+          <p>Comapre prices for nearby days</p>
+        </div>
+        <hr />
+        <div id="sort_line">
+          <p>
+            Prices displayed include taxes and may change based on availability.
+            You can review any additional fees before checkout. Prices are not
+            final until you complete your purchase.
+          </p>
+          <div id="sort">
+            <span onclick="sortLH()">Sort by</span>
+            <select id="sortlist">
+              <option value="">Price(Lowest)</option>
+              <option value="">Price(Lowest)</option>
+              <option value="">Price(Highest)</option>
+              <option value="">Duration(Shortest)</option>
+              <option value="">Duration(Longest)</option>
+              <option value="">Departure(Earliest)</option>
+              <option value="">Departure(Latest)</option>
+              <option value="">Arrival(Earliest)</option>
+              <option value="">Arrivaal(Latest)</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div id="credit_msg">
+          <img
+            id="credit_img"
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/voucher.svg"
+            alt=""
+          />
+          <div>
+            <h3>Sign in for airline credits</h3>
+            <p>
+              If you have an airline credit, sign in to use it. If you don't
+              have an account, create one using the same email address you used
+              when you purchased your original flight.
+            </p>
+            <a href="">Sign in</a>
+          </div>
+        </div>
+        <div id="container1"></div>
+        <button id="show-more">Show More</button>
+        <h5>Tell us how we can improve our site</h5>
+        <button id="share_feedback">Share feedback</button>
+      </div>
+      <div id="ads">
+        <img src="images/ads.jpg" alt="ads" />
+        <img src="images/ads2.jpg" alt="ads" />
       </div>
     </div>
-    <div id="container"></div>
+    <div id="footer"></div>
   </body>
 </html>
 <script>
   // let url=`https://orbitz-ujjawal-api.herokuapp.com/flights`;
-  let dataArr = [];
 
+  getData();
   getData();
   async function getData() {
     let url = "https://orbitz-ujjawal-api.herokuapp.com/flights";
     let res = await fetch(url);
     let data = await res.json();
     console.log(data);
-    // dataArr = data.menu.data;
-    console.log(dataArr);
     appendData(data);
   }
 
+
+
   function appendData(data) {
-    let container = document.getElementById("container");
+    let container = document.getElementById("container1");
     // container.innerHTML = "";
 
     data.forEach((el, i) => {
@@ -61,14 +164,14 @@
       time.innerText = el.Time;
 
       let flight = document.createElement("p");
-      flight.innerText =el.flight;
+      flight.innerText = el.flight;
 
       let from = document.createElement("p");
       from.innerText = el.from;
 
       let earn = document.createElement("p");
       earn.innerText = el.Earn;
-      earn.className="earnClass";
+      earn.className = "earnClass";
 
       // let hault = document.createElement("p");
       // hault.innerText = " ";
@@ -77,18 +180,31 @@
       stop.innerText = el.stop;
 
       let price = document.createElement("h3");
-      price.innerText = el.price;
+      price.innerText = `$ ${el.price}`;
 
       let time_taken = document.createElement("p");
       time_taken.innerText = el.time + " " + el.hault;
 
       div2.append("Flight");
-      div3.append(div2,flight);
-      div3.className="div3_flight";
+      div3.append(div2, flight);
+      div3.className = "div3_flight";
 
       div.append(time, time_taken, price, from, stop, earn, div3);
 
       container.append(div);
     });
+  }
+
+  async function sortLH() {
+    let url = "https://orbitz-ujjawal-api.herokuapp.com/flights";
+    let res = await fetch(url);
+    let data = await res.json();
+    data = data.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    console.log("data:", data);
+    let cont=document.querySelector("#container1");
+    cont.innerHTML = null;
+    appendData(data);
   }
 </script>
