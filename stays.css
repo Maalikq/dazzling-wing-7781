@@ -4,6 +4,182 @@
     /* box-sizing: border-box; */
     font-family: "Roboto", sans-serif;
 }
+/* navbar css strats from here */
+
+#navbar{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(0, 37, 60);
+    text-align: center;
+    color: rgb(252, 252, 252);
+    row-gap: 10px;
+    /* margin-top: 80px; */
+    
+}
+#orbitz img{
+    width: 200px;
+    height: 2rem;
+    margin-left: 80px;
+} 
+#dropbtn {
+  background-color: transparent;
+  color:  white;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  font-weight: 500;
+  margin-left: 20px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-family: "apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif";
+ 
+}
+
+#dropbtn:hover{
+  color: #89c9ed;
+}
+#dropbtn:after{
+    position: absolute;
+    top: 23px;
+    padding-left: 10px;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+    content: "\f107";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#dropmenu{
+  position: relative;
+  display: inline-block;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+#myDropdown{
+    background-color: #fff;
+    border-radius:8px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 15px 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    display: block;
+    line-height: 5px;
+}
+#dropmenu>#myDropdown>div:last-child{
+    /* border: 1px solid red; */
+    padding-bottom:26px;
+}
+
+.show {display: block;}
+
+
+#secondary_div{
+    /* border: 1px solid red ; */
+    width: 35%;
+    margin: auto;
+    margin-left: 460px;
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#secondary_div a{
+    color: #fff;
+    text-decoration: none;
+}
+#secondary_div a:hover{
+    color: rgb(0, 137, 133);;
+}
+#dis_flex {
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    background-color: #fff;
+    font-size: 15px;
+    
+}
+#dis_flex > h3{
+    margin-top: 5px;
+}
+ #dis_flex:hover{
+    color: rgb(0, 137, 133);
+    /* font-size: 16px; */
+    
+}
+#dis_flex a:hover{
+    color: rgb(0, 137, 133);
+}
+
+#green{
+    color: rgb(0, 137, 133);
+    /* margin-left: 10px; */
+}
+#footer_1{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 80px;
+    font-size: 12px;
+    font-family: 400;
+    border-bottom: 1px solid gray;
+    
+}
+#footer{
+   line-height: 2rem;
+ 
+}
+#footer p a{
+    color: #4296b8;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    /* color: red; */
+    border-bottom: 1px solid gray; 
+    
+}
+#footer-logo{
+    width: 200px;
+    margin-left: 20px;
+}
+#footer-logo img{
+    margin-left: 20px;
+}
+#footer_end{
+    margin-top: 20px;
+    padding-bottom: 100px;
+   
+}
+#footer_end p{
+    text-align: center;
+    width: 80%;
+    color: rgb(138, 132, 132);
+    line-height: 1.5rem;
+    margin-left: 10%;
+   
+
+}
+/* //////////////////////////////// */
 h1 {
     margin-left: 70px;
 }
@@ -11,7 +187,7 @@ h1 {
 #search_box_second {
     width: 90%;
     margin: auto;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     gap: 1.25rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
