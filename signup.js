@@ -35,6 +35,7 @@ form.addEventListener("submit", function(event){
                 userData.push(data);
                 localStorage.setItem("USERS", JSON.stringify(userData));
                 alert("sign up succesfull");
+                window.location.href="signin.html";
             }
        
     

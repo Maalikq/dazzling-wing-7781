@@ -1,7 +1,10 @@
 
 let navbar = () => {
   return `
-   <div id="orbitz"><img src="https://clipground.com/images/orbitz-logo-5.png" alt="">
+   <div id="orbitz">
+   <a href="index.html">
+   <img src="https://clipground.com/images/orbitz-logo-5.png" alt="">
+   </a>
    
    </div>
     <div id="dropmenu">
@@ -74,7 +77,7 @@ let navbar = () => {
         <a href="support.html">Support</a>
     
     
-        <a href="">Trips</a>
+        <a href="trip.html">Trips</a>
     
     
         <a href="signup.html" >
