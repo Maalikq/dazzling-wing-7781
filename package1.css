@@ -324,9 +324,9 @@
   display: flex;
   }
   #boxId>button{
-    width: 150px;
+    width: 250px;
     color: white;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
     border: none;
     background-color: #c83259;
