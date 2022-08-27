@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+      }
+    
+      #sig{
+        background-color: white;
+        width: 30%;
+        margin: auto;
+        /* padding: 10%; */
+  
+      }
+     #h2{
+    
+      text-align: center;
+    margin-left: -200px;
+     }
+     input{  
+         width : 400px;
+         font-size: 14px;
+         display: block;
+         margin: 25px 0;
+          padding: 0 10px;
+          height: 50px;
+        margin-right: 130px;
+      }
+      #simg{
+        width: 12%;
+        margin-top: 10px;
+        align-items: center;
+        /* margin-left: 600px; */
+        display: block;
+        margin: auto;
+        padding: 10px 0px 10px 0px;
+      
+      }
+      #sf{
+        border: 0.1px solid grey;
+      }
+      #p1{
+        font-size: 14px;
+        color: gray;
+        margin-top: -31px;
+      }
+      #p2{
+        margin-top: 13px;
+        color: gray;
+      }
+     #p3{
+       text-align: center;
+       color: grey;
+       text-decoration: none;
+     }
+     #p4{
+       text-align: center;
+       color: grey;
+       margin-top: 13px;
+     }
+     #apl{
+        width: 5%;
+        /* display: flex; */
+        padding-top: 11px;
+        margin: auto;
+        
+     }
+     #bx1{
+        width: 5%;
+        margin-top: -11px;
+     }
+     
+  
+  #p2>a,#p3>a{
+    text-decoration: none;
+    margin: auto;
+    width: 50%;
+    color: teal;
+
+  }
+  #her{
+    background-color:rgb(235,182,196) ;
+    border: none;
+    color: white;
+  }
+    </style>
+
+</head>
+<body>
+    <img id="simg"    src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="" srcset="">
+    <div id="sf" ></div>
+    <div id="sig">
+        <form >
+            <h2 id="h2">Create an account</h2>
+            <input placeholder="Email adress" id="email" type="text">
+            <input placeholder="Firstname" id="name" type="text">
+            <input placeholder="lastname" id="name1" type="text">
+            <input placeholder="password" id="password" type="password">
+            <input id="bx1" type="checkbox">
+            <p id="p1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
+            <p id="p2">By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms">Terms and Conditions,</a>  <a href="https://www.orbitz.com/lp/lg-privacy">Privacy Statement</a> and  <a href="https://www.orbitz.com/rewards/terms">Orbitz Rewards Terms and Conditions</a>  </p>
+            <input id="her" type="submit" value="continue">
+           
+            <p id="p3"> Already have an account <a href="signin.html">       Sign in</a> </p>
+            <p id="p4">or continue with</p>
+           
+            <div id="apl">
+             <div><a href=""><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="playstore"> </a></div>
+             <div><a href=""><img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="playstore"> </a></div>
+            
+            
+             </div>
+        </form>
+
+    </div>
+</body>
+<script src="signup.js"></script>
