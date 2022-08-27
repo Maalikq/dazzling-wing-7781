@@ -7,20 +7,32 @@
     <title>Document</title>
     
     <style>
-        h1{
-            text-align: center;
+        #sh1{
+            margin-left: 520px;
         }
-        #sbt{
-           display: flex;
-    width:440px;
+        #sbt1>button{
+    
+ 
+    display: block;
+    width:500px;
     height: 58%;
     padding: 10px 5px ;
     font-size: 14px;
+    font-weight: 500;
     background-color:rgb(200,50,89);
     border: none;
     color: white;
     margin: auto;
-       
+    margin-top: 30px;
+    margin-bottom: 40px;
+ 
+        }
+        #sbt1:hover{
+    transform: scale(1.1);
+  }
+        #sbt1>button>a{
+          text-decoration: none;
+          color: white;
         }
         #i1{
             display: flex;
@@ -41,17 +53,120 @@
   position: absolute;
   white-space: nowrap; */
 }
+#box4 {
+  border: 3px solid red ;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  height: min-content;
+  margin-top: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  margin: auto;
+}
+#box4 > div1 img {
+  height: 100%;
+  object-fit: cover;
+  width:100%;
+}
+#box4 > div3 img {
+  object-fit: cover;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+#box4_inner {
+  width: 90%;
+}
+#box4head{
+  /* border: 1px solid red ; */
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+#box4_inner ul {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-size: 0.855rem;
+  color: gray;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+#code_h3{
+  padding-left: 20px; 
+  margin-bottom: 10px
+}
+#countrycode {
+  display: flex;
+  gap: 1rem;
+  border: 1px gray;
+  justify-content: center;
+  height: auto;
+  margin-right: 60px;
+  flex-wrap: wrap;
+ 
+}
+#countrycode select{
+  padding: 10px 10px;
+}
+#gettheapp {
+  background-color: rgb(200, 50, 89);
+  color: aliceblue;
+  padding: 5px 30px;
+  border: 0px;
+}
+#code_p{
+  padding-left: 10px;
+  padding: 10px;
+  color: gray;
+  font-size: 0.775rem;
+  
+}
+#sf1{
+  border: 1px solid grey;
+  width: 500px;
+  height: 63%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+#sf1>h3,#sf1>p{
+  text-align: center;
+}
+#sf1>p{
+ color: gray;
+}
+#sf1>p>a{
+ text-decoration: none;
+ color: gray;
+}
+#sf1>p>a:hover{
+  color: black;
+}
     </style>
 </head>
 <body>
-    <h1>Trip</h1>
+    <h1 id="sh1">Trip</h1>
    <img id="i1" src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" alt="error">
-   <button id="sbt">Sign in or create free account</button>
+   <div id="sbt1">
+    <button><a href="signin.html">Sign in or create free account</a></button>
+   </div>
+  
+   <div id="sf1">
+         <!-- <h3>Don't have an account?</h3> -->
+         <h3>Don't have an account?</h3>
+         
+         <p> <a href="signup.html">Use your intiery number and Email to find a booking</a> </p>
+         
+   </div>
    
    <!-- <a href="https://www.orbitz.com/trips/booking-search?view=SEARCH_BY_ITINERARY_NUMBER_AND_EMAIL" id="in1" ><span class="is-visually-hidden">Don’t have an account?, Use your itinerary number and email to find a booking</span></a> -->
      <div id="box4">
     <div1>
-      <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="" />
+      <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="error" />
     </div1>
     <div2 id="box4_inner">
       <div>

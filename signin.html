@@ -24,8 +24,9 @@
      #h2{
     
       text-align: center;
-    margin-left: -310px;
+    margin-left: -340px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
      }
      input{  
          width : 400px;
@@ -61,6 +62,12 @@
      #p3{
        text-align: center;
        color: grey;
+       
+      margin-top: 20px;
+     }
+     #p3>a{
+      text-decoration: none;
+      color: teal;
      }
      #p4{
        text-align: center;
@@ -100,6 +107,13 @@
     border: none;
     color: white;
   }
+  #ne1:hover{
+    transform: scale(1.1);
+  }
+  #sf{
+    border: 1 px solid gray;
+  }
+
      /* #p12{
       text-align: center;
       padding-bottom: 120px;
@@ -109,6 +123,7 @@
 </head>
 <body>
     <img id="simg"    src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="" srcset="">
+    <div id="sf" ></div>
     <div id="sig">
         <form onsubmit="chk(event)" >
             <h1 id="h2">Sign in</h1>
@@ -121,15 +136,16 @@
             <p id="p2">By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms">Terms and Conditions,</a>  <a href="https://www.orbitz.com/lp/lg-privacy">Privacy Statement</a> and  <a href="https://www.orbitz.com/rewards/terms">Orbitz Rewards Terms and Conditions</a>  </p>
             
             <input id="ne1" type="submit" value="Sign in">
-            <p id="p3">Forgot Password?<a href=""></a></p>
+            <p id="p3"><a href="https://www.orbitz.com/forgotpassword?ckoflag=0&enable_login=true&pwaAuth=1&uurl=e3id%3Dredr%26rurl%3D%2Ftrips&enable_ulfp=true">Forgot Password?</a></p>
             <p id="p3"> Don't have an account <a href="signup.html">      Create one</a> </p>
             <p id="p4">or continue with</p>
              <div id="apl">
                 <!-- <div><img   src="https://a.travel-assets.com/egds/marks/apple.svg" alt=""></div>
                 <div><img  href="https://www.facebook.com/login.php?skip_api_login=1&api_key=444673758939659&kid_directed_site=0&app_id=444673758939659&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D444673758939659%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3Dfgj-aBCGtO25c4E81BooWFUJo4E8DWB8S_v1LQG2Ppo%26redirect_uri%3Dhttps%253A%252F%252Fwww.orbitz.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc9c9d0b7-ba69-4049-88fa-9583335103a7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.orbitz.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dfgj-aBCGtO25c4E81BooWFUJo4E8DWB8S_v1LQG2Ppo%23_%3D_&display=page&locale=en_GB&pl_dbl=0" src="https://a.travel-assets.com/egds/marks/facebook.svg" alt=""></div>
              -->
-             <a href=""> <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt=""></a>
-             <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=444673758939659&kid_directed_site=0&app_id=444673758939659&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D444673758939659%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3Dfgj-aBCGtO25c4E81BooWFUJo4E8DWB8S_v1LQG2Ppo%26redirect_uri%3Dhttps%253A%252F%252Fwww.orbitz.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc9c9d0b7-ba69-4049-88fa-9583335103a7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.orbitz.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dfgj-aBCGtO25c4E81BooWFUJo4E8DWB8S_v1LQG2Ppo%23_%3D_&display=page&locale=en_GB&pl_dbl=0"> <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt=""></a>
+             <div><a href="https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name email&state=EaVdIMeCYZrLUpLxovq8HsKlSpDb2q8k1BpXSa19X9s&nonce=o-K-NxnthePwvziN8d8TdQbRAZ06b-YGnvQNIwmNpeI&redirect_uri=https://www.orbitz.com/eg-auth-svcs/api/v1/oauth2/callback/apple-web&locale=en_US"><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="playstore"> </a></div>
+             <div><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=444673758939659&kid_directed_site=0&app_id=444673758939659&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D444673758939659%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%26redirect_uri%3Dhttps%253A%252F%252Fwww.orbitz.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9d28dc2c-22d0-409a-9416-b2040d15ab6d%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.orbitz.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%23_%3D_&display=page&locale=en_GB&pl_dbl=0"><img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="playstore"> </a></div>
+            
             
              </div>
 
