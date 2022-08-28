@@ -1,0 +1,224 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <link rel="stylesheet" href="flight.css" />
+  <link rel="stylesheet" href="../dazzling-wing-7781/css/navbar.css">
+  <body>
+    <div id="navbar">
+    
+    </div>
+    <div id="main_body">
+      <div id="side_div">
+        <div id="filter_by">
+          <h2>Filter by</h2>
+          <div id="stops">
+            <h3>Stops</h3>
+            <h3>From</h3>
+            <div>
+              <input type="checkbox" name="nonstops" id="" />Nonstop (54)
+            </div>
+
+            <p>$124</p>
+            <div><input type="checkbox" name="" id="" /> 1 Stop (70)</div>
+
+            <p>$105</p>
+            <div><input type="checkbox" name="" id="" />2 + Stops (1)</div>
+
+            <p>$225</p>
+          </div>
+          <div id="airlines">
+            <h3>Airlines</h3>
+            <h3>From</h3>
+            <div><input type="checkbox" name="" id="" />IndiGo (37)</div>
+            <p>$105</p>
+            <div><input type="checkbox" name="" id="" />Air India (29)</div>
+            <p>$137</p>
+            <div><input type="checkbox" name="" id="" />Vistara (28)</div>
+            <p>$151</p>
+            <div><input type="checkbox" name="" id="" />Go First (26)</div>
+            <p>$130</p>
+            <div><input type="checkbox" name="" id="" />FlexFlight (4)</div>
+            <p>$151</p>
+            <div>
+              <input type="checkbox" name="" id="" />Hahn Air Systems (1)
+            </div>
+            <p>$312</p>
+          </div>
+          <div id="travel_baggage">
+            <h3>Travel and baggage</h3>
+            <h3>From</h3>
+            <div>
+              <input type="checkbox" name="" id="" />Seat choice included
+            </div>
+
+            <p>$151</p>
+            <div>
+              <input type="checkbox" name="" id="" />Carry-on bag included
+            </div>
+
+            <p>$105</p>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div id="up_line">
+          <p style="font-weight:bold">Choose departing flight  </p>
+          <p style="font-weight:bold">></p>
+          <p>Choose returning flight  </p>
+          <p>></p>
+          <p>Review your trip</p>
+        </div>
+        <div id="flexible_date">
+          <h3>Flexible dates</h3>
+          <input type="datetime-local" name="" id="" />
+          <p>Comapre prices for nearby days</p>
+        </div>
+        <hr />
+        <div id="sort_line">
+          <p>
+            Prices displayed include taxes and may change based on availability.
+            You can review any additional fees before checkout. Prices are not
+            final until you complete your purchase.
+          </p>
+          <div id="sort">
+            <span onclick="sortLH()">Sort by</span>
+            <select id="sortlist">
+              <option value="">Price(Lowest)</option>
+              <option value="">Price(Lowest)</option>
+              <option value="">Price(Highest)</option>
+              <option value="">Duration(Shortest)</option>
+              <option value="">Duration(Longest)</option>
+              <option value="">Departure(Earliest)</option>
+              <option value="">Departure(Latest)</option>
+              <option value="">Arrival(Earliest)</option>
+              <option value="">Arrivaal(Latest)</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div id="credit_msg">
+          <img
+            id="credit_img"
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/voucher.svg"
+            alt=""
+          />
+          <div>
+            <h3>Sign in for airline credits</h3>
+            <p>
+              If you have an airline credit, sign in to use it. If you don't
+              have an account, create one using the same email address you used
+              when you purchased your original flight.
+            </p>
+            <a href="">Sign in</a>
+          </div>
+        </div>
+        <div id="container1"></div>
+        <button id="show-more">Show More</button>
+        <h5>Tell us how we can improve our site</h5>
+        <button id="share_feedback">Share feedback</button>
+      </div>
+      <div id="ads">
+        <img src="images/ads.jpg" alt="ads" />
+        <img src="images/ads2.jpg" alt="ads" />
+      </div>
+    </div>
+    <div id="footer_1"></div>
+    <div id="footer_end"></div>
+  </body>
+</html>
+<script>
+  // let url=`https://orbitz-ujjawal-api.herokuapp.com/flights`;
+
+  getData();
+  getData();
+  async function getData() {
+    let url = "https://orbitz-ujjawal-api.herokuapp.com/flights";
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data);
+    appendData(data);
+  }
+
+
+
+  function appendData(data) {
+    let container = document.getElementById("container1");
+    // container.innerHTML = "";
+
+    data.forEach((el, i) => {
+      let div = document.createElement("div");
+      div.className = "flight_details";
+      
+
+      let div2 = document.createElement("div");
+      let div3 = document.createElement("div");
+      div2.className = "material-symbols-outlined";
+      // div2.innerText=Flight;
+
+      let time = document.createElement("h3");
+      time.innerText = el.Time;
+
+      let flight = document.createElement("p");
+      flight.innerText = el.flight;
+
+      let from = document.createElement("p");
+      from.innerText = el.from;
+
+      let earn = document.createElement("p");
+      earn.innerText = el.Earn;
+      earn.className = "earnClass";
+
+      // let hault = document.createElement("p");
+      // hault.innerText = " ";
+
+      let stop = document.createElement("p");
+      stop.innerText = el.stop;
+
+      let price = document.createElement("h3");
+      price.innerText = `$ ${el.price}`;
+
+      let time_taken = document.createElement("p");
+      time_taken.innerText = el.time + " " + el.hault;
+
+      div2.append("Flight");
+      div3.append(div2, flight);
+      div3.className = "div3_flight";
+
+      div.append(time, time_taken, price, from, stop, earn, div3);
+
+      container.append(div);
+    });
+
+    document.querySelector(".flight_details").addEventListener("click",function(){
+      console.log("hello ji");
+      window.location.href="./checkout.html";
+    })
+  }
+
+  async function sortLH() {
+    let url = "https://orbitz-ujjawal-api.herokuapp.com/flights";
+    let res = await fetch(url);
+    let data = await res.json();
+    data = data.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    console.log("data:", data);
+    let cont=document.querySelector("#container1");
+    cont.innerHTML = null;
+    appendData(data);
+  }
+
+ 
+</script>
+<script src="./script/flight.js" type="module"></script>
+<script src="../dazzling-wing-7781/components/navbar.js" type="module"></script>
