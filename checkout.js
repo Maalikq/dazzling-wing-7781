@@ -4,7 +4,7 @@
 
 
 
-import { navbar, footer_main, end } from "../components/navbar.js";
+import { navbar, footer_main, end } from "./components/navbar.js";
 document.querySelector("#navbar").innerHTML = navbar();
 console.log(navbar());
 
