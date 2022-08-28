@@ -59,7 +59,11 @@
        border: none;
        background-color: rgb(200,50,89);
        color: white;
+       cursor: pointer;
   }
+  #search:hover {
+    border: 2px solid black;
+    }
 #select1{
        margin-left: 470px;
        border: none;
