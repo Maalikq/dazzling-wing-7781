@@ -10,21 +10,21 @@ let navbar = () => {
     <div id="dropmenu">
         <button id="dropbtn">More travel </button>
         <div id="myDropdown" class="dropdown-content">
-        <a href="#"> 
+        <a href="stays.html"> 
         <div id="dis_flex">
         <i class="fa-solid fa-hotel"></i>
             <h3 id="green">Stays</h3>
             </div>
             </a>
         <br>
-        <a href="#">
+        <a href="flight.html">
         <div id="dis_flex">
         <i class="fa-solid fa-plane"></i>
             <h3 id="green">Flights</h3>
             </div>
             </a>
         <br>
-        <a href="#">
+        <a href="package.html">
         <div id="dis_flex">
         <i class="fa-solid fa-cart-flatbed-suitcase"></i>
             <h3> Packages</h3>

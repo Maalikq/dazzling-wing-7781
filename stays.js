@@ -8,7 +8,7 @@ document.getElementById("dropbtn").addEventListener("click", () => {
 
 });
 
-
+});
 window.onclick = function (event) {
   if (!event.target.matches("#dropbtn")) {
     let dropdowns = document.getElementsByClassName("dropdown-content");
