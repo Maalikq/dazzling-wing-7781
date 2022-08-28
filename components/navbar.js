@@ -17,7 +17,7 @@ let navbar = () => {
             </div>
             </a>
         <br>
-        <a href="flight.html">
+        <a href="flight_land.html">
         <div id="dis_flex">
         <i class="fa-solid fa-plane"></i>
             <h3 id="green">Flights</h3>
