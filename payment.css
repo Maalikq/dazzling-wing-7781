@@ -338,6 +338,7 @@
     height: 50px;
     background-color: rgb(246, 238, 238);
     margin-bottom: 10px;
+    border: none;
   }
   #payment>label{
     font-weight: bolder;
@@ -347,5 +348,6 @@
   #submit{
     color: white;
     font-weight: bold;
+    border: none;
   }
   
