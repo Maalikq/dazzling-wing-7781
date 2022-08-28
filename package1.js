@@ -15,6 +15,11 @@ function append(){
         let btn1= document.createElement('button');
         btn1.setAttribute('id','btn1id');
         btn1.innerText= "Book Now"
+        btn1.addEventListener("click", function(){
+                
+          alert("Booking Successful")
+      })
+        
         
         let price=document.createElement('div');
         price.setAttribute('id','priceid');
@@ -31,8 +36,7 @@ function append(){
 
         let price1=document.createElement('h2');
         price1.innerText=`$${el.price} Per Traveler`;
-        // let para=document.createElement('p');
-        // para.innerText='includes flight + stay trip';
+        
 
         let image=document.createElement('img');
         image.src=el.url;
@@ -54,7 +58,9 @@ function append(){
 
        
         container.append(box);
+        
     })
+   
 }
 append();
 
@@ -89,3 +95,4 @@ fetch('https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&local
 .then(response => response.json())
 .then(response => console.log(response))
 .catch(err => console.error(err));
+
