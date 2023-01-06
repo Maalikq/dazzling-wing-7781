@@ -42,11 +42,11 @@ In this project we have made the foolowing things :
 
 
 ## Stays Page:
-![Stays] (/images/orbit5.png)
+![Stays](/images/orbit5.png)
 
 
 ## Packages Page:
-![Packages] (../orbit6.png)
+![Packages](../orbit6.png)
 
 
 ## Learnings :
