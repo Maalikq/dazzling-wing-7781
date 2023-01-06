@@ -1,202 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Orbitz Hotel Deals, Flights, Cheap Vacations & Rentals Cars</title>
-  <link rel="shortcut icon" type="image" style="background-color:transparent;" href="https://p.kindpng.com/picc/s/438-4388888_travel-orbitz-hd-png-download.png">
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-  <link rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz Hotel Deals, Flights, Cheap Vacations & Rentals Cars</title>
+    <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./package.css">
+    <style>
+
+    </style>
 </head>
-
 <body>
-  <div id="navbar"></div>
-  <!-- 1st  main search box -->
-  <div id="search">
-    <!-- Append search box here -->
-
-    <div id="background_img">
-      <img id="seaimage"
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh" />
-    </div>
-    <div id="start-search">
-      <div id="first-search">
-        <div id="points">Stays</div>
-        <div>Flights</div>
-        <div>Cars</div>
-        <div>Packages</div>
-        <div>Things to do</div>
-        <div>Cruises</div>
-      </div>
-      <hr>
-      <div id="search_box_second">
-        <div id="main-search">
-          <input placeholder="Going to" id="query"  oninput="debouncing(searchBtn(),1000)"/>
-          <span class="material-symbols-outlined">
-            location_on
-          </span>
-        </div>
-        <input type="date" placeholder="Check-in" id="datecheck">
-        <input placeholder="Check-out" type="date" id="dateout">
-        <input placeholder="Travelers" id="travel"/>
-      </div>
-
-      <div id="2checkbox">
-          <input id="checkbox1" type="checkbox"> Add a
-          flight
-           <input id="checkbox2" type="checkbox"> Add a Car
-      </div>
-
-      <div id="search-main">
-        <button id="search-main-btn">Search</button>
-      </div>
-    </div>
-  </div>
-  <!-- fixedbtn css is in navbar.css -->
-  <button id="fixedbtn" onclick="submit()">💬Help</button>
-<!-- 1st images box -->
-  <div id="box1">
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_TravelAsYouAre_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
-        alt="Travel" />
-    </div>
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_Rewards_imgB_840x473_20220207.jpg?impolicy=fcrop&w=600&h=257&q=medium"
-        alt="" />
-    </div>
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_InsiderPrices_imgB_840x473_20220207.jpg?impolicy=fcrop&w=600&h=257&q=medium"
-        alt="" />
-    </div>
-  </div>
-<!-- 2nd Images box -->
-  <h2 id="featurehead">Featured offers</h2>
-  <div id="Featured_offers">
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
-        alt="" />
-      <div id="Featured_offers_1">
-        <h3>Last-minute deals</h3>
-        <p>getaway today</p>
-      </div>
-    </div>
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
-        alt="" />
-      <div id="Featured_offers_1">
-        <h3>All-inclusive resorts</h3>
-        <p>Enjoy sun and fun</p>
-      </div>
-    </div>
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
-        alt="" />
-      <div id="Featured_offers_1">
-        <h3>Insider prices</h3>
-        <p>Members get rewarded</p>
-      </div>
-    </div>
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
-        alt="" />
-      <div id="Featured_offers_1">
-        <h3>Jet and reset</h3>
-        <p>Fly somewhere beachy and warm</p>
-      </div>
-    </div>
-  </div>
-<!-- Advertise -->
-<div id="adver">
-  <img id="thirfland"
-    src="https://www.independentcottages.co.uk/assets/images/hero/luxury-peak-district-md.jpg"/>
-    <button id="thrilbtn">Ad</button>
-  <div class="add_inner">
+    
+    <div id="navbar"></div>
+    <div id="container">
+        <div id="div1">
+       <h1 id="first">Save with vacation packages</h1>
+       <p>Choose two or more items and save on your trip:</p>
+       <button id="btn1">Stay added</button>
+       <button id="btn2">Flight added</button>
+       <button id="btn3">Add a Car</button>
+       <select name="" id="select1">
+        <option value="">1 Room, 2 Travelers 
+            </option>
+     </select>
+     <select name="" id="select2">
+        <option value="">Economy</option>
+        <option value="">Premium economy</option>
+        <option value="">Business class</option>
+        <option value="">First class</option>
+     </select>
+     <div id="div2">
+      <input type="text" placeholder="Leaving From" id="query">
+      <span class="material-symbols-outlined">
+        
+    </span>
+    <button id="btn4"><span style='font-size:30px;'>&#8646;</span></button>
+    <input type="text" placeholder="Going To" >
+      
+    <input type="date" id="da1">
+    
    
-    <img id="thrifly" src="https://tpc.googlesyndication.com/simgad/7966280916834571352?"/>
-    <h3>Spend less.Adventure more</h3>
-    <p>Cruise this season in the absolute best car for your money</p>
-  </div>
-</div>
+     </div>
 
-<!-- Advertise end -->
-<!-- 3rd images box Explore local -->
-  <div id="box3">
-    <div>
-      <img
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2020/09/25/15ORB_GeoTargeted_Chicago_mrq_1320x742_20200525.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
-        alt="" />
-      <div id="box3_text">
-        <h3>Explore local getaways</h3>
-        <p>Get out and explore, and stay close to home with a road trip</p>
-      </div>
+     <div id="check">
+      <input type="checkbox"> 
+      <p>I only need accommodations for part of my trip</p>
     </div>
-    <div>
-      <!-- append something in it -->
-      <img id=""src="https://tpc.googlesyndication.com/simgad/2468637394072322380" />
+     <button id="search" onclick="searchButton()">Search</button>
     </div>
-  </div>
-<!-- 4th here to help section -->
-  <div id="help_desk">
-    <h1>Here to help keep you on the move</h1>
-    <div id="help_desk_box">
-      <div id="editdiv">
-       <div id="pencil"> <i  class="fa-solid fa-pencil"></i></div>
-        <h3 id="helptext">Change or cancel a trip</h3>
-        <p id="helptext2">Make updates to your itinerary or cancel a booking</p>
+    </div>  
+   
+
+    <div id="container2">
+      <h1>What's new</h1>
+      
+       <div id="middle">
+       <div id="m1">
+        
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/4ORB_PackagesUnder499_sfimg_562x240_20200512.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+        <h3>Get away for under $499</h3>
+        <p>You can save more when you book a flight and hotel together.</p>
+       </div>
+       <div id="m2">
+        <div id="im1">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/09/5ORB_HOTELS_Marquee1_Coupon_121119.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
       </div>
-      <div id="editdiv">
-        <div id="dollar"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
-        <h3 id="doltext">Use a credit or coupon</h3>
-        <p id="doltext2">Apply a coupon code or credit to a new trip</p>
+      <div id="im2">
+        <h2>All-inclusive Vacations</h2>
+        <p>Care-free luxury makes travel more rewarding.</p>
       </div>
-      <div id="editdiv">
-        <div id="dollar">💬</div>
-        <h3 id="doltext">Track your refund</h3>
-        <p id="doltext2">Check the status of a refund currently in progress</p>
       </div>
+
     </div>
-  </div>
-  <!-- 5th Travelling tips section -->
-  <h1 id="helph1">Traveling tips</h1>
-  <div id="Traveling_tips">
-    <div >
-      <img id="dark"
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg"
-        alt="" />
-      <div id="Traveling_tips_inner">
-        <h3>National Parks</h3>
-        <p>There's plenty to keep you busy.</p>
-        <button id="travelbtn">Learn more</button>
+  <!-- middle 2 -->
+
+    <h1>Travel tips from the pros</h1>
+    <div id="middle2">
+      <div id="m3">
+  <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_5-ways-to-upgrade-your-trip.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+  <p>Here are five easy ways to take your trip from ordinary to out of this world.</p>
       </div>
-    </div>
-    <div >
-      <img
-      id="dark"
-        src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg"
-        alt="" />
-      <div id="Traveling_tips_inner">
-        <h3>The perfect road trip</h3>
-        <p>Find an adventure for every season.</p>
-        <button id="travelbtn">Read on</button>
+
+      <div id="m3">
+<img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_Caribbean_all_inclusives.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+  <p>Not every all-inclusive is the same here is where to book based on your personality type.</p>
       </div>
+
+     <div id="m3">
+     <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/13/ORB_PKG_MAY_10_things_all-inclusive_resort.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+     <p>From cooking lessons to safari tours, these resorts will take you inclusive stays to the next level.</p>
+
+     </div>
+
     </div>
-  </div>
-<!-- 6th only 1 image book your trip -->
+
+
+<!-- middle 3 -->
+      
+
+
+      <h1>Featured offers</h1>
+   <div id="middle3">
+
+      <div id="m4">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg" alt="">
+      </div>
+      <div id="m5">
+        <img src="https://tpc.googlesyndication.com/simgad/2468637394072322380" alt="">
+      </div>
+
+   </div>
+
+   <!-- middle 4 -->
+
+   <h1>Vacation your way</h1>
+
+   <div id="middle4">
+
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_PetFriendly_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Luxury_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_AllInclusive_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+       alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_LastMinute_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Beach_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+    <div id="m6">
+      <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Affinity_Romantic_imgB_444x444_20200731.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" alt="">
+    </div>
+
+   </div>
+
+    </div>
+
+   <!-- 6th only 1 image book your trip -->
   <div id="only2image">
     <img src="https://tpc.googlesyndication.com/simgad/10056509806482740393?" alt="">
   </div>
@@ -205,7 +154,7 @@
     <div1>
       <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="" />
     </div1>
-    <div2 id="box4_inner">
+    <div id="box4_inner">
       <div>
         <h2 id="box4head">Rewards are waiting for you in the Orbitz app</h2>
         <ul id="box4li">
@@ -284,11 +233,11 @@
           may apply.
         </p>
       </div>
-    </div2>
-    <div3>
+    </div>
+    <div >
       <img src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png"
-        alt="" />
-    </div3>
+        alt=""  id="scan"/>
+    </div>
   </div>
 <!-- 8th more destinations section -->
   <div id="More_destinations">
@@ -386,8 +335,11 @@
   <!-- footer section start -->
   <div id="footer_1"></div>
   <div id="footer_end"></div>
+
 </body>
 </html>
 <script src="script/index.js"></script>
 <script src="script/navbar.js" type="module"></script>
 <script src="https://kit.fontawesome.com/8d772ce65c.js" crossorigin="anonymous"></script>
+<!-- <script src="script/navbar.js" type="module"></script> -->
+<script src="./package.js"></script>

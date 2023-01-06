@@ -1,27 +1,30 @@
 
 let navbar = () => {
   return `
-   <div id="orbitz"><img src="https://clipground.com/images/orbitz-logo-5.png" alt="">
+   <div id="orbitz">
+   <a href="index.html">
+   <img src="https://clipground.com/images/orbitz-logo-5.png" alt="">
+   </a>
    
    </div>
     <div id="dropmenu">
         <button id="dropbtn">More travel </button>
         <div id="myDropdown" class="dropdown-content">
-        <a href="#"> 
+        <a href="stays.html"> 
         <div id="dis_flex">
         <i class="fa-solid fa-hotel"></i>
             <h3 id="green">Stays</h3>
             </div>
             </a>
         <br>
-        <a href="#">
+        <a href="flight_land.html">
         <div id="dis_flex">
         <i class="fa-solid fa-plane"></i>
             <h3 id="green">Flights</h3>
             </div>
             </a>
         <br>
-        <a href="#">
+        <a href="package.html">
         <div id="dis_flex">
         <i class="fa-solid fa-cart-flatbed-suitcase"></i>
             <h3> Packages</h3>
@@ -55,7 +58,7 @@ let navbar = () => {
             </div>
             <br>
             <div id="dis_flex">
-            <a href="flip.html">Groups & meetings</a>
+            <a href="#">Groups & meetings</a>
             </div>
             <br>
             <div id="dis_flex">
@@ -74,7 +77,7 @@ let navbar = () => {
         <a href="support.html">Support</a>
     
     
-        <a href="">Trips</a>
+        <a href="trip.html">Trips</a>
     
     
         <a href="signup.html" >
@@ -134,7 +137,7 @@ let footer_main = () => {
         <p><a href="https://www.orbitz.com/service/">Support</a></p>
         <p><a href="https://www.orbitz.com/service/#/articles/560/34/16267">Cancel your hotel or vacation rental booking</a></p>
         <p><a href="https://www.orbitz.com/service/#/articles/569/34/16477">Cancel your flight</a></p>
-        <p><a href="https://www.orbitz.com/service/#/myTrips/16138">Refund timeline,policies&processes</a></p>
+        <p><a href="https://www.orbitz.com/service/#/myTrips/16138">Refund timelines,policies & processes</a></p>
         <p><a href="https://www.orbitz.com/service/#/article/19518">Use an Orbitz Coupon</a></p>
         
         </div>

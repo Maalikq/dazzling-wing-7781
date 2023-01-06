@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- //////////////////// -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <div id="navbar">
+    <div id="orbitz"> <a href="index.html">
+
+      <img src="https://clipground.com/images/orbitz-logo-5.png" alt="">
+    </a>
+   
+    </div>
+     <div id="dropmenu">
+         <button id="dropbtn">More travel </button>
+         <div id="myDropdown" class="dropdown-content">
+         <a href="stays.html"> 
+         <div id="dis_flex">
+         <i class="fa-solid fa-hotel"></i>
+             <h3 id="green">Stays</h3>
+             </div>
+             </a>
+         <br>
+         <a href="flight.html">
+         <div id="dis_flex">
+         <i class="fa-solid fa-plane"></i>
+             <h3 id="green">Flights</h3>
+             </div>
+             </a>
+         <br>
+         <a href="package.html">
+         <div id="dis_flex">
+         <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+             <h3> Packages</h3>
+             </div>
+         </a>
+         <br>
+         <a href="#">
+         <div id="dis_flex">    
+         <i class="fa-solid fa-car"></i>
+             <h3>Cars</h3>
+             </div>
+             </a>
+         <br>
+         <a href="#">
+         <div id="dis_flex">
+         <i class="fa-solid fa-sailboat"></i> 
+             <h3>Cruises</h3>
+             </div>
+             </a>
+             <br>
+             <a href="#">
+             <div id="dis_flex">
+             <i class="fa-solid fa-box"></i> 
+                 <h3>Things to do</h3>
+                 </div>
+                 </a>
+             <br>
+             <div id="dis_flex">
+             <a href="#">Deals</a>
+             </a>
+             </div>
+             <br>
+             <div id="dis_flex">
+             <a href="#">Groups & meetings</a>
+             </div>
+             <br>
+             <div id="dis_flex">
+             <a href="#">Travel Blog</a>
+             </div>
+         </div>
+     </div>
+ <div id="secondary_div">
+     
+         <a href="https://www.orbitz.com/es/?langid=2058">Español</a>
+   
+    
+         <a href="#">List your property</a>
+    
+   
+         <a href="#">Support</a>
+     
+     
+         <a href="trip.html">Trips</a>
+     
+     
+         <a href="signup.html" >
+           Sign In
+         </a>
+     
+     
+     </div>
+    </div>
+
+
+    <div class="main_div">
+    <div id="search_box_second">
+            <div id="main-search">
+                <input placeholder="Going to" id="query" />
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+            </div>
+            <input type="date" placeholder="Check-in" id="date">
+            <input placeholder="Check-out" type="date">
+            <input placeholder="Travelers" />
+            <div id="search-main">
+                <button id="search-main-btn" onclick="searchBtn()">Search</button>
+            </div>
+        </div>
+        <!-- ............................................sidebar............................................ -->
+        <div id="entire_div">
+        <div id="sidebar">
+            <div id="sub_sidebar1">
+                    <h3>Search by property name</h3>
+                    <input type="text" placeholder="e.g. Best Westorn">
+                    <hr>
+            </div>
+            <h2>Filter by</h2>
+            <div id="sidebar_filter">
+                <h5>Populars filters</h5>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Hot Tub</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Har Mandir Sahib</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Water Park</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Ocien View</label> <br>
+                <input type="checkbox" name="HotTub">
+                <label for="HotTub">Stair-free path to entrance</label>
+            </div>
+         
+            <div id="sidebar_guest">
+                <h5>Guest Rating</h5>
+                <input type="radio" id="any">
+                <label for="any">Any</label><br>
+                <input type="radio" id="any">
+                <label for="any">Wonderful 4.5+</label><br>
+                <input type="radio" id="any">
+                <label for="any">Very good 4+</label><br>
+                <input type="radio" id="any">
+                <label for="any">Good 3.5+</label><br>
+            </div>
+            <div id="sidebar_payment">
+                <h5>Payment type</h5>
+                <input type="checkbox" name="payment">
+                <label for="payment">
+                    Fully refundable</label><br>
+
+                <input type="checkbox" name="payment">
+                <label for="payment">
+                    Reserve now, pay later</label>          
+                  </div>
+                  
+                  <div id="sidebar_property">
+                    <h5>Property type</h5>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                    Cabin</label><br>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                  Pension</label><br>
+                    <input type="checkbox" name="property">
+                <label for="property">
+                   Hotel resort</label><br>
+                  </div>
+
+                  <div id="Neighborhood">
+                    <h5>Neighborhood</h5>
+                    <input type="radio" id="Nhood">
+                    <label for="Nhood">Patna</label><br>
+                    <input type="radio" id="Nhood">
+                    <label for="Nhood">Rajendra Nagar</label><br>
+                  </div>
+
+                  <div id="location">
+                    <h5>Popular locations</h5>
+                    <input type="radio" id="loc">
+                    <label for="loc">Phulwari Sharif</label><br>
+                    <input type="radio" id="loc">
+                    <label for="loc">Buddha Smriti Park</label><br>
+                    <input type="radio" id="loc">
+                    <label for="loc">ISKCON Temple Patna</label><br>
+                  </div>
+
+                  <div id="plans">
+                    <h5>Meal plans available</h5>
+                    <input type="checkbox" name="plan">
+                    <label for="plan">
+                        Breakfast included</label><br>
+                       <input type="checkbox" name="plan">
+                       <label for="plan">
+                        Lunch included</label><br>
+                          <input type="checkbox" name="plan">
+                          <label for="plan">
+                            Dinner included</label><br>
+                  </div>
+        </div>
+        <div id="main_container">
+           
+
+        </div>
+
+
+        <div id="right_sidebar">
+          <div>
+            <img src="https://graphicriver.img.customer.envatousercontent.com/files/62273606/preview_multipurpose_banner_ad_design.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=9bdaa62cc6a0915b642e27f67b63dc37" alt="">
+          </div>
+          <div>
+            <img src="https://s3.envato.com/files/62273611/PNG%20Blue/Banner%20blue%20120x600.png" alt="">
+          </div>
+          </div>
+        </div>
+
+    <!-- footer section start -->
+    <div id="footer_1">
+      <div id="footer-logo">
+          <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+              alt="">
+      </div>
+      <div id="footer">
+          <h3>Company</h3>
+          <p> <a href="https://www.orbitz.com/lp/b/about">About</a></p>
+          <p> <a href="career.html">Jobs</a> </p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">List your property</a>
+          </p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Partnerships</a></p>
+          <p> <a href="./press.html">Newsroom</a></p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors Relations</a>
+          </p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Site Map</a></p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Orbitz Reward</a></p>
+          <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Advertising</a></p>
+      </div>
+      <div id="footer">
+          <h3>Explore</h3>
+          <p><a href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations">Hotel
+                  in United States</a></p>
+          <p><a href="https://www.orbitz.com/lp/lgbtq-gay-travel-hotels">Vacation Rentals in United States</a></p>
+          <p><a href="https://www.orbitz.com/lp/lgbtq-gay-travel-hotels">Car Rantals in United States</a></p>
+          <p><a href="https://www.orbitz.com/lp/lgbtq-gay-travel-hotels">Domestic Flights</a></p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">Vacation
+                  Packages in United States</a></p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">Orbitz
+                  Reviews</a></p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">Orbitz
+                  Coupons</a></p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">LGBTQ Travel</a>
+          </p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">Unique
+                  Accommodations</a></p>
+          <p><a href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides">Travel Blog</a>
+          </p>
+      </div>
+      <div id="footer">
+          <h3>Policies</h3>
+          <p><a href="https://www.orbitz.com/lp/lg-privacy">Privacy Policy</a></p>
+          <p><a href="https://www.orbitz.com/lp/lg-terms">Terms of Use</a></p>
+          <p><a href="https://www.orbitz.com/lp/lg-terms">List your property</a></p>
+          <p><a href="https://www.orbitz.com/lp/lg-terms">Partnerships</a></p>
+          <p><a href="https://www.orbitz.com/dnsmpi">Newsroom</a></p>
+          <p><a href="https://www.orbitz.com/dnsmpi">Investors</a></p>
+          <p><a href="https://www.orbitz.com/dnsmpi">Site Map</a></p>
+          <p><a href="https://www.orbitz.com/dnsmpi">Orbitz Reward</a></p>
+          <p><a href="https://www.orbitz.com/dnsmpi">Advertising</a></p>
+      </div>
+      <div id="footer">
+          <h3>Help</h3>
+          <p><a href="https://www.orbitz.com/service/">Support</a></p>
+          <p><a href="https://www.orbitz.com/service/#/articles/560/34/16267">Cancel your hotel or vacation rental
+                  booking</a></p>
+          <p><a href="https://www.orbitz.com/service/#/articles/569/34/16477">Cancel your flight</a></p>
+          <p><a href="https://www.orbitz.com/service/#/myTrips/16138">Refund timelines,policies & processes</a></p>
+          <p><a href="https://www.orbitz.com/service/#/article/19518">Use an Orbitz Coupon</a></p>
+
+      </div>
+  </div>
+  
+
+  <div id="footer_end">
+      <p>© 2022 Orbitz, LLC, An Expedia Group Company.All rights reserved.</p>
+      <p>Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+  </div>
+
+</body>
+</html>
+<script>
+    function append(){
+        let container=document.getElementById("main_container");
+        container.innerHTML=null;
+        let hotelDataLs=JSON.parse(localStorage.getItem("hotelData"))||[];
+        hotelDataLs.forEach(function(el){
+            let box=document.createElement('div');
+            box.setAttribute('id','boxId')
+
+            let img_bag=document.createElement('div');
+            img_bag.setAttribute('id','img_bag');
+
+            let hotel_title=document.createElement("div");
+            hotel_title.setAttribute('id',"hotel_title");
+
+            let price=document.createElement('div');
+            price.setAttribute('id','priceid');
+
+            let review=document.createElement('div');
+            review.setAttribute('id','reviewid');
+
+            let rating=document.createElement('h4');
+            rating.setAttribute('id','ratingid');
+            rating.innerText=`${el.rating}/10`;
+
+            let reviews=document.createElement('p');
+            reviews.innerText=`(${el.reviews} reviews) `;
+
+            let price1=document.createElement('h2');
+            price1.innerText=`$ ${el.price}`;
+            let price2=document.createElement('p');
+            price2.innerText='$170 total';
+
+            let image=document.createElement('img');
+            image.src=el.url;
+
+            let hotel=document.createElement('h2');
+            hotel.innerText=el.hotel;
+
+            let city=document.createElement('p');
+            city.innerText=el.city;
+
+
+            review.append(rating,reviews);
+            price.append(price1,price2);
+
+
+            img_bag.append(image);
+            hotel_title.append(hotel,city,review);
+            box.append(img_bag,hotel_title,price);
+
+           
+            container.append(box);
+        })
+    }
+ append();
+
+ 
+
+ document.getElementById("dropbtn").addEventListener("click", () => {
+  document.getElementById("myDropdown").classList.toggle("show");
+});
+
+
+window.onclick = function (event) {
+  if (!event.target.matches("#dropbtn")) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+</script>
+
+<script src="https://kit.fontawesome.com/8d772ce65c.js" crossorigin="anonymous"></script>

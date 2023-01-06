@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+      }
+    
+      #sig{
+        background-color: white;
+        width: 30%;
+        margin: auto;
+        /* padding: 10%; */
+        
+
+      }
+     #h2{
+    
+      text-align: center;
+    margin-left: -340px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+     }
+     input{  
+         width : 400px;
+         font-size: 14px;
+         display: block;
+         margin: 25px 0;
+          padding: 0 10px;
+          height: 50px;
+        margin-right: 130px;
+      }
+      #simg{
+        width: 12%;
+        margin-top: 10px;
+        align-items: center;
+        /* margin-left: 600px; */
+        display: block;
+        margin: auto;
+        padding: 10px 0px 10px 0px;
+      
+      }
+      #sf{
+        border: 0.1px solid grey;
+      }
+      #p1{
+        font-size: 14px;
+        color: gray;
+        margin-top: -21px;
+      }
+      #p2{
+        margin-top: 13px;
+        color: gray;
+      }
+     #p3{
+       text-align: center;
+       color: grey;
+       
+      margin-top: 20px;
+     }
+     #p3>a{
+      text-decoration: none;
+      color: teal;
+     }
+     #p4{
+       text-align: center;
+       color: grey;
+       margin-top: 13px;
+     }
+  
+     #bx1{
+        width: 5%;
+        margin-top: -11px;
+     }
+     
+  
+  #p2>a{
+    text-decoration: none;
+    margin: auto;
+    width: 50%;
+    color: teal;
+
+  }
+     #p9{
+      text-align: center;
+
+     }
+     #ne1{
+    background-color:rgb(235,182,196) ;
+    border: none;
+    color: white;
+  }
+  #ne1:hover{
+    transform: scale(1.1);
+  }
+  #sf{
+    border: 1 px solid gray;
+  }
+
+  #apl{
+       width: 10%;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+        /* border: 1px solid red ; */
+        justify-content: space-between;
+        align-items: center;
+     }
+     #apl1{
+      width: 40%;
+      /* border: 1px solid green ; */
+     }
+     #apl2{
+      width: 40%;
+      /* border: 1px solid yellow ; */
+      justify-content: center;
+      align-items: center;
+     }
+     #apl1 img{
+      width:100%;
+      object-fit: cover;
+     }
+     #apl2 img{
+      width:100%;
+      object-fit:cover;
+     }
+    </style>
+
+</head>
+<body>
+    <img id="simg"    src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="" srcset="">
+    <div id="sf" ></div>
+    <div id="sig">
+        <form onsubmit="chk(event)" >
+            <h1 id="h2">Sign in</h1>
+            <input placeholder="Email adress" id="email" type="text">
+            <input placeholder="Password" id="password" type="password">
+            <!-- <input type="checkbox"> -->
+            <input id="bx1" type="checkbox"  >
+            <!-- <p id="p12">Keep me Signed in</p> -->
+            <p id="p1">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
+            <p id="p2">By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms">Terms and Conditions,</a>  <a href="https://www.orbitz.com/lp/lg-privacy">Privacy Statement</a> and  <a href="https://www.orbitz.com/rewards/terms">Orbitz Rewards Terms and Conditions</a>  </p>
+            
+            <input id="ne1" type="submit" value="Sign in">
+            <p id="p3"><a href="https://www.orbitz.com/forgotpassword?ckoflag=0&enable_login=true&pwaAuth=1&uurl=e3id%3Dredr%26rurl%3D%2Ftrips&enable_ulfp=true">Forgot Password?</a></p>
+            <p id="p3"> Don't have an account? <a href="signup.html">      Create one</a> </p>
+            <p id="p4">or continue with</p>
+             <!-- <div id="apl">
+               
+             <div><a href="https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name email&state=EaVdIMeCYZrLUpLxovq8HsKlSpDb2q8k1BpXSa19X9s&nonce=o-K-NxnthePwvziN8d8TdQbRAZ06b-YGnvQNIwmNpeI&redirect_uri=https://www.orbitz.com/eg-auth-svcs/api/v1/oauth2/callback/apple-web&locale=en_US"><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="playstore"> </a></div>
+             <div><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=444673758939659&kid_directed_site=0&app_id=444673758939659&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D444673758939659%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%26redirect_uri%3Dhttps%253A%252F%252Fwww.orbitz.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9d28dc2c-22d0-409a-9416-b2040d15ab6d%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.orbitz.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%23_%3D_&display=page&locale=en_GB&pl_dbl=0"><img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="playstore"> </a></div>
+            
+            
+             </div> -->
+
+        </form>
+        <div id="apl">
+          <div id="apl1"><a href="https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name email&state=EaVdIMeCYZrLUpLxovq8HsKlSpDb2q8k1BpXSa19X9s&nonce=o-K-NxnthePwvziN8d8TdQbRAZ06b-YGnvQNIwmNpeI&redirect_uri=https://www.orbitz.com/eg-auth-svcs/api/v1/oauth2/callback/apple-web&locale=en_US"><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="playstore"> </a></div>
+          <div id="apl2"><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=444673758939659&kid_directed_site=0&app_id=444673758939659&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D444673758939659%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%26redirect_uri%3Dhttps%253A%252F%252Fwww.orbitz.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9d28dc2c-22d0-409a-9416-b2040d15ab6d%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.orbitz.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DDBYrpkITde5Vo7n2cQ61tS-21Cx-2_TG3pxk_NlNuWQ%23_%3D_&display=page&locale=en_GB&pl_dbl=0"><img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="playstore"> </a></div>
+         
+         
+          </div>
+    </div>
+</body>
+<script src="signin.js"></script>

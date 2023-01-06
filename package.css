@@ -1,0 +1,349 @@
+#container{
+    margin-top: 30px;
+             width: 100%;
+             height: 400px;
+             /* border: 1px solid; */
+   }
+   #div1{
+    margin-top: 20px;
+     width: 70%;
+     height: 370px;
+     /* border:  1px solid red; */
+     margin: auto;
+   }
+   #div1>p{
+    margin-top: 20px;
+   }
+  
+ #btn1 ,#btn2 {
+    border-radius: 20px;
+    background-color: rgb(178,216,221);
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+ }
+ #btn3{
+    border-radius: 20px;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+ }
+ #btn4{
+        border-radius: 50px;
+        width: 50px;
+        border: none;
+ }
+ #div2 input{
+       width: 30%;
+        height: 40px;
+        position: relative;
+        font-size: 1rem;
+        padding-left: 30px;
+        margin-top: 20px;
+ }
+ #check{ margin-top: 20px;
+     width: 32%;
+     display: flex;
+ }
+ #check input{
+      width: 7%;
+      height: 20px;
+ }
+
+  #search{
+    margin-top: 20px;
+       width: 14%;
+       height: 50px;
+       border-radius: 50px;
+       border: none;
+       background-color: rgb(200,50,89);
+       color: white;
+       cursor: pointer;
+  }
+  #search:hover {
+    border: 2px solid black;
+    }
+#select1{
+       margin-left: 470px;
+       border: none;
+       color: rgb(128,179,178);
+}
+#select2{
+    border: none;
+    padding: 5px;
+    width: 90px;
+    color: rgb(128,179,178);
+}
+/* #search_box_second {
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+        gap: 1.25rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        margin-bottom: 1.25rem;
+    }
+#main-search {
+        position: relative;
+    }
+#main-search input {
+         width: 200px; 
+        width: 93%;
+        height: 40px;
+        position: relative;
+        font-size: 1rem;
+        padding-left: 30px;
+    }
+    */
+
+ #container2{
+        width: 100%;
+        height: 1450px;
+        /* border: 1px solid red; */
+        background-color: rgb(245,245,245);
+       
+ }
+ /* 2nd part */
+ #container2>h1{
+          margin-left: 160px;
+ }
+ 
+ #middle{
+ 
+     width: 80%;
+     height: 350px;
+     /* border: 1px solid black; */
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+ }
+ #m1{
+  
+    width: 60%;
+    height: 320px;
+    background-color: white;
+   
+
+ }
+ #m1>img{
+    width: 100%;
+    height: 250px;
+ }
+ #m2{
+  display: flex;
+  width: 35%;
+  height: 150px;
+  padding: 10px;
+  background-color: white;
+ }
+ #im2{
+      margin-top: 50px;
+      width: 250px;
+      height: 150px;
+      padding: 5px;
+ }
+ #im1>img{
+     width: 100px;
+      height: 140px;
+ }
+ 
+ /* 2nd part */
+#middle2{
+      width: 80%;
+     height: 300px;
+     /* border: 1px solid black; */
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+}
+#m3{
+     width: 33%;
+     height: 100%;
+     background-color: white;
+}
+#m3>img{
+       width: 80%;
+       height: 50%;
+}
+#m3>p{
+   width: 85%;
+   font-size: 14px;
+   color: rgb(169,159,159);
+}
+
+
+
+/* middle 3 */
+
+#middle3{
+      width: 80%;
+     height: 300px;
+     /* border: 1px solid black; */
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+}
+
+#m4{
+    width: 75%;
+    height: 100%;
+}
+#m5{
+    width: 20%;
+    height: 100%;
+}
+#m4>img{
+   width: 100%;
+   height: 100%;
+}
+#m5>img{
+  width: 100%;
+   height: 100%;
+}
+
+/* Middle 4 */
+
+#middle4{
+   width: 80%;
+     height: 200px;
+     /* border: 1px solid black; */
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+}
+#m6{
+  width: 13%;
+  height: 100%;
+}
+#m6>img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+  /* <!-- 6th only 1 image book your trip  css start here--> */
+#only2image{
+/* border: 1px solid red ; */
+width:65%;
+margin: auto;
+/* margin-bottom: 30px; */
+height: 150px;
+}
+/*   <!-- 7th Rewards are waiting section css start here--> */
+#box4 {
+/* border: 3px solid red ; */
+width: 80%;
+display: grid;
+grid-template-columns: 30% 60% 10%;
+height: 250px;
+/* margin-top: 10px; */
+border: 1px solid gray;
+background-color: white;
+margin: auto;
+}
+#box4 > div1 img {
+width: 350px;
+height: 245px;
+object-fit: cover;
+}
+#box4 > div3 img {
+object-fit: cover;
+padding-right: 10px;
+padding-top: 10px;
+}
+
+#box4_inner {
+width: 600px;
+}
+#box4head{
+/* border: 1px solid red ; */
+font-size: 1.8rem;
+margin-left: 10px;
+margin-right: 10px;
+}
+#box4_inner ul {
+padding: 10px;
+display: flex;
+flex-direction: column;
+padding-left: 2rem;
+font-size: 0.855rem;
+color: gray;
+line-height: 18px;
+font-weight: 500;
+}
+
+#code_h3{
+padding-left: 10px; 
+margin-bottom: 10px
+}
+#countrycode {
+display: flex;
+gap: 1rem;
+border: 1px gray;
+justify-content: center;
+height: auto;
+margin-right: 30px;
+flex-wrap: wrap;
+
+}
+#countrycode select{
+padding: 10px 10px;
+}
+#gettheapp {
+background-color: rgb(200, 50, 89);
+color: aliceblue;
+padding: 5px 10px;
+border: 0px;
+}
+#code_p{
+padding-left: 10px;
+padding: 10px;
+color: gray;
+font-size: 0.775rem;
+
+}
+/*  8th more destinations section css start here */
+#More_destinations {
+margin-top: 20px;
+}
+#More_destinations_div select option {
+color: teal;
+}
+
+#More_destinations h1 {
+margin-bottom: 10px;
+margin-left: 145px;
+}
+
+#More_destinations_div {
+outline: none;
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+
+}
+#More_destinations_div >div{
+/* border: 1px solid red; */
+outline: none;
+padding: 10px 10px;
+background-color: white;
+}
+
+#More_destinations_div select {
+/* border: 1 px solid blue; */
+outline: none;
+width: 100%;
+height: 45px;
+border: 0px;
+}
+#scan{
+width: 100px;
+height: 200px;
+}
