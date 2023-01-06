@@ -28,8 +28,8 @@ In this project we have made the foolowing things :
 
 ***
 ## Landing Page :
-![home]<img src="/images/orbit.png" alt="homepage"/>
-![home1]<img src="/images/orbit2.png" alt="homepage2"/>
+![home]<img src="/images/orbit.png" alt="homepage">
+![home1]<img src="/images/orbit2.png" alt="homepage2">
 
 
 
@@ -38,15 +38,15 @@ In this project we have made the foolowing things :
 - Given full authentication with LocalStorage.
 
 
-![signup]<img src="/images/orbit4.png" alt="signupPage" />
+![signup]<img src="/images/orbit4.png" alt="signupPage">
 
 
 ## Stays Page:
-![Stays] <img src="/images/orbit5.png" alt="staysPage" />
+![Stays] <img src="/images/orbit5.png" alt="staysPage">
 
 
 ## Packages Page:
-![Packages] <img src="/images/orbit6.png" alt="packagesPage" />
+![Packages] <img src="/images/orbit6.png" alt="packagesPage">
 
 
 ## Learnings :
