@@ -28,8 +28,8 @@ In this project we have made the foolowing things :
 
 ***
 ## Landing Page :
-![home](./orbit.png)
-![home1](orbit2.png)
+![home]()
+![home1]()
 
 
 
@@ -38,15 +38,15 @@ In this project we have made the foolowing things :
 - Given full authentication with LocalStorage.
 
 
-![signup](/images/orbit4.png)
+![signup]()
 
 
 ## Stays Page:
-![Stays](/images/orbit5.png)
+![Stays]()
 
 
 ## Packages Page:
-![Packages](images/orbit6.png)
+![Packages]()
 
 
 ## Learnings :
