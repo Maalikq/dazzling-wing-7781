@@ -18,7 +18,7 @@ In this project we have made the foolowing things :
 
 ---
 
-### [click here to run live demo]https://orbitz-clone-dazzlingwing.netlify.app/)
+### [click here to run live demo](https://orbitz-clone-dazzlingwing.netlify.app/)
 
 ## Tech stacks used :
 * **HTML**
