@@ -46,7 +46,7 @@ In this project we have made the foolowing things :
 
 
 ## Packages Page:
-![Packages](../orbit6.png)
+![Packages](images/orbit6.png)
 
 
 ## Learnings :
