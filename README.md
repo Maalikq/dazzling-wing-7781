@@ -28,7 +28,7 @@ In this project we have made the foolowing things :
 
 ***
 ## Landing Page :
-![home](orbit.png)
+![home](./orbit.png)
 ![home1](orbit2.png)
 
 
