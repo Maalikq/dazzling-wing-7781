@@ -28,8 +28,10 @@ In this project we have made the foolowing things :
 
 ***
 ## Landing Page :
-![home]()
-![home1]()
+![home](https://user-images.githubusercontent.com/96861847/211051331-00bcdc1a-cfd5-4372-8f75-6dfc775ad2de.png)
+
+![home1](https://user-images.githubusercontent.com/96861847/211051379-cba05ae5-3bb9-4cdc-bb32-a44b38839d62.png)
+
 
 
 
@@ -38,15 +40,18 @@ In this project we have made the foolowing things :
 - Given full authentication with LocalStorage.
 
 
-![signup]()
+![signup](https://user-images.githubusercontent.com/96861847/211051441-56ffe093-60ca-4b94-af27-4b776003c457.png)
+
 
 
 ## Stays Page:
-![Stays]()
+![Stays](https://user-images.githubusercontent.com/96861847/211051461-1476c490-e29d-462b-8449-ac87238142d5.png)
+
 
 
 ## Packages Page:
-![Packages]()
+![Packages](https://user-images.githubusercontent.com/96861847/211051474-34624c7e-8a63-4bb1-b07f-dd282e9c774c.png)
+
 
 
 ## Learnings :
